@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import logoImg from '../../assets/images/site/logo-finclass.svg';
 import buttonOne from '../../assets/images/site/trial-icon.svg';
 import buttonTwo from '../../assets/images/site/icon-user.svg';
@@ -11,9 +13,9 @@ export default function Header({ isBlack }) {
         <img src={logoImg} alt="Logo finclass" />
         <nav>
           <img src={buttonOne} alt="Assine agora" />
-          <a href="/register">Assine agora</a>
+          <Link to="/register">Assine agora</Link>
           <img src={buttonTwo} alt="Fazer login" />
-          <a href="/login">Já sou assinante</a>
+          <Link to="/login">Já sou assinante</Link>
         </nav>
       </div>
     </NavbarMenu>
