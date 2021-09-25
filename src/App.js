@@ -1,9 +1,14 @@
-function App() {
+import { BrowserRouter as Router } from 'react-router-dom';
+import { GlobalStyles } from './styles/global';
+import Routes from './routes';
+
+export function App() {
   return (
-    <h1>
-      Hello Finclass
-    </h1>
+    <>
+      <Router>
+        <GlobalStyles />
+        <Routes />
+      </Router>
+    </>
   );
 }
-
-export default App;
