@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
-import Header from '../../components/Navbar';
+import Header from '../../components/Header';
 import Subscribebar from '../../components/Subscribebar';
 import Button from '../../components/Buttondefault';
 
 import Carousel from '../../components/Carousel';
 
-import appFinclass from '../../assets/images/site/app-finclass-financas.webp';
+import appFinclass from '../../assets/images/site/app-finclass.webp';
 import lightningIcon from '../../assets/images/site/thunder-lightning-circle.svg';
 import arrowImg from '../../assets/images/site/icon-arrow-circle-down.svg';
 
@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      <Header isBlack={isVisible} />
 
       <Container>
         <section className="content">

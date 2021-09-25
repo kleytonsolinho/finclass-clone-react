@@ -4,9 +4,9 @@ import buttonTwo from '../../assets/images/site/icon-user.svg';
 
 import { NavbarMenu } from './styles';
 
-export default function Navbar() {
+export default function Header({ isBlack }) {
   return (
-    <NavbarMenu>
+    <NavbarMenu isBlack={isBlack}>
       <div className="navbarContainer">
         <img src={logoImg} alt="Logo finclass" />
         <nav>

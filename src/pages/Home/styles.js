@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -12,7 +11,7 @@ export const Container = styled.main`
   justify-content: space-between;
 
   min-height: 628px;
-  background-image: url("../../assets/images/site/bg-desktop.webp");
+  background-image: url('../../assets/images/site/bg-desktop.webp');
   background-repeat: no-repeat;
 
 .content {
