@@ -5,6 +5,8 @@ import Subscribebar from '../../components/Subscribebar';
 import Button from '../../components/Buttondefault';
 
 import Carousel from '../../components/Carousel';
+import Categorys from '../../components/Categorys';
+import Video from '../../components/Video';
 
 import appFinclass from '../../assets/images/site/app-finclass.webp';
 import lightningIcon from '../../assets/images/site/thunder-lightning-circle.svg';
@@ -50,7 +52,7 @@ export default function Home() {
           <Button text="Assine agora" />
           <span>
             Assine a partir de
-            <strong>R$ 39,90/mês no plano anual.</strong>
+            <strong> R$ 39,90/mês no plano anual.</strong>
           </span>
           <div>
             <p>Descubra como </p>
@@ -65,6 +67,8 @@ export default function Home() {
 
       {isVisible && <Subscribebar />}
       <Carousel />
+      <Categorys />
+      <Video />
     </>
   );
 }
