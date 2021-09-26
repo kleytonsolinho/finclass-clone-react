@@ -12,7 +12,6 @@ export const Container = styled.section`
 export const Header = styled.header`
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
   padding: 0 3rem;
   height: 138px;
   background: rgba(0,0,0,0.95);
@@ -22,6 +21,8 @@ export const Header = styled.header`
   top: 0;
   left: 0;
   z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
 
   display: flex;
   align-items: center;
