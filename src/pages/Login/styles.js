@@ -51,6 +51,7 @@ export const Container = styled.section`
 
   form {
     width: 100%;
+    font-weight: 300;
     //background: aquamarine;
 
     label {
