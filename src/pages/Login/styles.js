@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import imgBg from '../../assets/images/site/bg-login.56fb13a6.png';
 
 export const Container = styled.section`
-  max-width: 1280px;
+  width: 100vw;
   margin: 0 auto;
   padding: 0 2rem;
   min-height: 100vh;
