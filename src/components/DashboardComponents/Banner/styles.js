@@ -4,7 +4,7 @@ import imgBg from '../../../assets/images/site/_b-home_desk_1.jpg';
 
 export const Container = styled.div`
   width: 100vw;
-  min-width: 100vw;
+  max-width: 100vw;
   height: 80vh;
 
   padding: 88px 2rem 0 2rem;
@@ -25,6 +25,7 @@ export const Shadow = styled.div`
 
 export const Content = styled.div`
   width: 100%;
+  max-width: 1280px;
   height: 100%;
   display: flex;
   align-items: flex-end;
