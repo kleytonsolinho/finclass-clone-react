@@ -110,7 +110,7 @@ export const Box = styled.div`
       margin: 10px 0;
 
       &:focus {
-        border: 1px solid transparent !important;
+        outline: none;
       }
     }
   }

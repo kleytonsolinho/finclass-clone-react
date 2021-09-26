@@ -12,7 +12,7 @@ export default function Register() {
   return (
     <Container>
       <Header>
-        <img src={imgLogo} alt="Logo finclass" />
+        <Link to="/"><img src={imgLogo} alt="Logo finclass" /></Link>
         <Link to="/login"><button type="button">Entrar</button></Link>
       </Header>
       <Content>
