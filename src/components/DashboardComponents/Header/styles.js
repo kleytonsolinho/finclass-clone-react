@@ -1,0 +1,94 @@
+import styled from 'styled-components';
+
+export const NavbarMenu = styled.header`
+  max-width: 1280px;
+  height: 88px;
+  padding: 0 2rem;
+
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  z-index: 10;
+  border: 1px solid rgba(134, 136, 141, 0.25);
+  background: transparent;
+  //background: ${(props) => (props.isBlack ? 'black' : 'transparent')};
+
+  .navbarContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    nav {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 6rem;
+
+
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+
+      li {
+        position: relative;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 115%;
+        height: 100%;
+        margin-left: 2rem;
+        color: #ffffff;
+        opacity: 0.7;
+
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+
+      button {
+        border: none;
+        background: #ffffff;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      .user {
+
+        &:hover {
+          color: #00e7f9;
+        }
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
+
+        h1 {
+          margin: 0 0.5rem;
+        }
+
+        .icon {
+          color: #00e7f9;
+        }
+      }
+    }
+  }
+`;
