@@ -27,6 +27,7 @@ export const Content = styled.div`
   width: 100%;
   max-width: 1280px;
   height: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: flex-end;
 
@@ -136,9 +137,10 @@ export const Content = styled.div`
 
       span {
           font-size: 0.875rem;
-          font-weight: 600;
+          font-weight: 300;
           color: #ffffff;
           opacity: 0.8;
+          margin-top: 0.5rem;
       }
     }
   }
