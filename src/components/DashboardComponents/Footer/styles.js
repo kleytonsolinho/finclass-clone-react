@@ -44,6 +44,7 @@ export const Copyright = styled.div`
   width: 100%;
   max-width: 1280px;
   height: 50px;
+  margin: 0 auto;
 
   border-top: 2px solid #202227;
 
