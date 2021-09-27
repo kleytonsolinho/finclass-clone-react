@@ -42,6 +42,7 @@ export const Container = styled.footer`
 
 export const Copyright = styled.div`
   width: 100%;
+  max-width: 1280px;
   height: 50px;
 
   border-top: 2px solid #202227;
