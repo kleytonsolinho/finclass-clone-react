@@ -5,6 +5,8 @@ export const Container = styled.section`
   height: 500px;
   padding: 0 2rem;
 
+  margin-top: 8rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +14,7 @@ export const Container = styled.section`
 
   .header {
     width: 100%;
-    height: 10%;
+    height: 50px;
 
     display: flex;
     align-items: center;
@@ -30,7 +32,7 @@ export const Container = styled.section`
 
   .contentSlide {
     width: 100%;
-    height: 90%;
+    height: 450px;
     background: aqua;
 
     &:hover {
@@ -48,6 +50,9 @@ export const Container = styled.section`
     position: relative;
     z-index: 1;
     scroll-behavior: smooth;
+
+    display: flex;
+    align-items: center;
   }
 
   .slideGalery::-webkit-scrollbar {
@@ -60,22 +65,26 @@ export const Container = styled.section`
     justify-content: space-between;
 
     width: 100%;
+    height: 100%;
     background: transparent;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 10;
-
     opacity: 0;
 
     transition: 0.5s all;
 
     button {
       background: transparent;
-      width: 10px;
+      width: 70px;
       height: 100%;
-      background: gray;
       border: none;
+    }
+
+    button:first-of-type {
+      background-image: linear-gradient(to right, #0b0b0e, transparent);
+    }
+
+    button:last-of-type {
+      background-image: linear-gradient(to left, #0b0b0e, transparent);
     }
 
     .arrowLeft {
@@ -98,8 +107,24 @@ export const Container = styled.section`
       display: inline-block;
       position: relative;
       cursor: pointer;
-      margin: 0 3px;
+      margin: 10px 5px;
+      border-radius: 6px;
       overflow: hidden;
+
+      background: aquamarine;
+
+      img {
+        height: 100%;
+      }
+
+      .card-content {
+        width: 100%;
+        padding: 1rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: red;
+      }
 
       h1 {
         writing-mode: vertical-rl;

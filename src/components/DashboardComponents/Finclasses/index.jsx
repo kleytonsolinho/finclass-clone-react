@@ -5,7 +5,7 @@ import imgIcon from '../../../assets/images/site/finclassSingular.434bd9e1.svg';
 import arrowImg from '../../../assets/images/site/arrow-slide-white.07deb364.svg';
 import arrowRight from '../../../assets/images/site/arrow-right.0da26cf8.svg';
 
-import dataCarousel from '../../../data/dataFinclasses';
+import dataCarousel from '../../../data/dataFinseries';
 
 import { Container } from './styles';
 
@@ -26,26 +26,34 @@ export default function Finclasses() {
     <Container>
       <div className="header">
         <img src={imgIcon} alt="Finclasses" />
-        <Link to="/">
-          ver todos
-          <img src={arrowRight} alt="" className="arrowR" />
-        </Link>
+        {dataCarousel.length >= 5 && (
+          <Link to="/">
+            ver todos
+            <img src={arrowRight} alt="" className="arrowR" />
+          </Link>
+        )}
       </div>
       <section className="contentSlide">
-        <div className="controls">
-          <button type="button" onClick={handleLeftClick}>
-            <img src={arrowImg} alt="Left" className="arrowLeft" width={55} height={55} />
-          </button>
-          <button type="button" onClick={handleRightClick}>
-            <img src={arrowImg} alt="Right" className="arrowRight" width={55} height={55} />
-          </button>
-        </div>
+        {dataCarousel.length >= 5 && (
+          <div className="controls">
+            <button type="button" onClick={handleLeftClick}>
+              <img src={arrowImg} alt="Left" className="arrowLeft" width={55} height={55} />
+            </button>
+            <button type="button" onClick={handleRightClick}>
+              <img src={arrowImg} alt="Right" className="arrowRight" width={55} height={55} />
+            </button>
+          </div>
+        )}
         <div className="slideGalery" ref={carousel}>
           {dataCarousel.map((item) => (
             <div className="card" key={item.id}>
               <img src={item.img} alt="" />
-              <h1>{item.name}</h1>
-              <p>{item.description}</p>
+              {/* <div className="card-content">
+                <h2>{item.category}</h2>
+                <h1>{item.name}</h1>
+                <span>{item.company}</span>
+                <p>{item.description}</p>
+              </div> */}
             </div>
           ))}
         </div>
