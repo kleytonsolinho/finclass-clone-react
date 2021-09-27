@@ -33,7 +33,9 @@ export default function Login() {
               <img src={imgRecpass} alt="Recuperar senha" />
             </div>
           </a>
-          <Link to="/dashboard"><ButtonPrimary type="submit">Entrar</ButtonPrimary></Link>
+          <Link to="/dashboard">
+            <ButtonPrimary type="submit">Entrar</ButtonPrimary>
+          </Link>
         </form>
         <h5><span>Ainda não tem uma conta?</span></h5>
         <ButtonOutline> Criar conta</ButtonOutline>

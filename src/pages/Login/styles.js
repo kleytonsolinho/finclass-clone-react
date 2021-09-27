@@ -62,6 +62,7 @@ export const Container = styled.section`
 
     a {
       align-self: flex-end;
+      width: 100%;
     }
 
     input {

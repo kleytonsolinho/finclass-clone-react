@@ -47,7 +47,9 @@ export default function Register() {
               Celular
               <input name="phone" type="text" placeholder="(11) 9 9999-9999" />
             </label>
-            <Link to="/dashboard"><Button text="Continuar" /></Link>
+            <Link to="/dashboard">
+              <Button text="Continuar" />
+            </Link>
           </form>
         </Box>
         <Policy>
