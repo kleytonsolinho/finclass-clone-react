@@ -34,10 +34,10 @@ export default function FinclassesCarousel({ imgCategory, data }) {
         {data.length >= 5 && (
           <div className="controls">
             <button type="button" onClick={handleLeftClick}>
-              <img src={arrowImg} alt="Left" className="arrowLeft" width={55} height={55} />
+              <img src={arrowImg} alt="Left" width={55} height={55} />
             </button>
             <button type="button" onClick={handleRightClick}>
-              <img src={arrowImg} alt="Right" className="arrowRight" width={55} height={55} />
+              <img src={arrowImg} alt="Right" width={55} height={55} />
             </button>
           </div>
         )}

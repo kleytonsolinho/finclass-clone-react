@@ -70,8 +70,8 @@ export const Container = styled.section`
 
     position: absolute;
 
-    width: 100%;
-    height: 100%;
+    width: 140px;
+    height: 450px;
     background: transparent;
     z-index: 10;
     opacity: 0;
@@ -87,23 +87,23 @@ export const Container = styled.section`
 
     button:first-of-type {
       background-image: linear-gradient(to right, #0b0b0e, transparent);
+
+      img {
+        transform: rotate(180deg);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
 
     button:last-of-type {
       background-image: linear-gradient(to left, #0b0b0e, transparent);
-    }
 
-    .arrowLeft {
-      transform: rotate(180deg);
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-    .arrowRight {
-      &:hover {
-        cursor: pointer;
+      img {
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
