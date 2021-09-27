@@ -8,18 +8,22 @@ export const SlideHero = styled.section`
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
-  position: relative;
 
   overflow: hidden;
 `;
 
-export const Container = styled.div`
+export const SlideGallery = styled.section`
   width: 100%;
   height: 100%;
 
   overflow-y: hidden;
   overflow-x: scroll;
   flex: none;
+`;
+
+export const Container = styled.div`
+  width: 100%;
+  height: 100%;
 
   padding: 88px 2rem;
 
