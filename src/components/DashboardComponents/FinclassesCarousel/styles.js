@@ -5,7 +5,7 @@ export const Container = styled.section`
   max-width: 1280px;
   height: 500px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 0;
 
   display: flex;
   align-items: center;
@@ -38,6 +38,7 @@ export const Container = styled.section`
   .contentSlide {
     width: 100%;
     height: 450px;
+    position: relative;
 
     &:hover {
       button {
@@ -79,28 +80,28 @@ export const Container = styled.section`
     border: none;
 
     transition: 0.5s all;
+  }
 
-    button:first-of-type {
-      background-image: linear-gradient(to right, #0b0b0e, transparent);
-      left: 0;
+  button:first-of-type {
+    background-image: linear-gradient(to right, #0b0b0e, transparent);
+    left: 0;
 
-      img {
-        transform: rotate(180deg);
+    img {
+      transform: rotate(180deg);
 
-        &:hover {
-          cursor: pointer;
-        }
+      &:hover {
+        cursor: pointer;
       }
     }
+  }
 
-    button:last-of-type {
-      background-image: linear-gradient(to left, #0b0b0e, transparent);
-      right: 0;
+  button:last-of-type {
+    background-image: linear-gradient(to left, #0b0b0e, transparent);
+    right: 0;
 
-      img {
-        &:hover {
-          cursor: pointer;
-        }
+    img {
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -123,34 +124,50 @@ export const Card = styled.div`
 
     &:hover {
       .card-content {
-        h1 {
-          bottom: 70px;
-        }
-
-        p {
-          opacity: 1;
-          bottom: 20px;
-        }
+        bottom: 0px;
       }
     }
 
     .card-content {
       width: 100%;
-      height: auto;
+      height: 200px;
       padding: 1rem;
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -80px;
+      //background: salmon;
 
-      h1 {
+      transition: 0.5s all;
+
+      h2 {
         position: absolute;
         left: 0;
-        bottom: 40px;
-        font-size: 1.3rem;
+        top: 20px;
+        font-size: 1rem;
+        padding: 0 1.5rem;
+        color: #00e7f9;
+      }
+
+      h1 {
+        display: block;
+        width: 100%;
+        background: aqua;
+        white-space: pre-line;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        font-size: 1.5rem;
         padding: 0 1.5rem;
         color: #ffffff;
+      }
 
-        transition: 1s all;
+      span {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        font-size: 0.9rem;
+        padding: 0 1.5rem;
+        color: gray;
       }
 
       p {
@@ -161,15 +178,12 @@ export const Card = styled.div`
         font-weight: 300;
         position: absolute;
         left: 0;
-        bottom: 0;
-        opacity: 0;
+        top: 120px;
         text-align: left;
-        white-space: nowrap;
+        white-space: normal;
         overflow: hidden;
         text-overflow: ellipsis;
-        line-height: 24px;
-
-        transition: 1s all;
+        line-height: 1rem;
       }
     }
 `;
