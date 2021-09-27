@@ -19,7 +19,6 @@ export default function Dashboard() {
       <Banner />
       <FinclassesCarousel imgCategory={imgFinclasses} data={dataFinclasses} />
       <FinclassesCarousel imgCategory={imgFinseries} data={dataFinseries} />
-      <hr />
       <Trail />
       <Footer />
     </Container>

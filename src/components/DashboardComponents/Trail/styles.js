@@ -6,6 +6,8 @@ export const Container = styled.section`
   padding: 0 2rem;
   margin: 0 auto;
 
+  border-top: 2px solid #202227;
+
   h3 {
     font-size: 1rem;
     color: gray;
