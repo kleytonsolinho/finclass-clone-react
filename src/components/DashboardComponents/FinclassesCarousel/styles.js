@@ -5,6 +5,7 @@ export const Container = styled.section`
   max-width: 1280px;
   height: 500px;
   margin: 0 auto;
+  padding: 2rem;
 
   display: flex;
   align-items: center;
@@ -37,7 +38,6 @@ export const Container = styled.section`
   .contentSlide {
     width: 100%;
     height: 450px;
-    background: aqua;
 
     &:hover {
       .controls {
@@ -67,6 +67,8 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    position: absolute;
 
     width: 100%;
     height: 100%;
@@ -112,7 +114,7 @@ export const Card = styled.div`
     display: inline-block;
     width: 290px;
     height: 420px;
-    margin: 10px 5px;
+    margin: 10px 12px;
     border-radius: 6px;
     overflow: hidden;
     cursor: pointer;
