@@ -39,13 +39,13 @@ export const NavbarMenu = styled.header`
 
       li {
         position: relative;
-        font-size: 1.2rem;
-        font-weight: 600;
+        font-size: 1.1rem;
+        font-weight: 400;
         line-height: 115%;
         height: 100%;
         margin-left: 2rem;
         color: #ffffff;
-        opacity: 0.7;
+        opacity: 0.8;
 
         transition: opacity 0.3s;
 
