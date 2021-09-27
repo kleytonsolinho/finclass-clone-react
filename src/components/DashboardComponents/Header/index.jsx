@@ -26,13 +26,15 @@ export default function Header() {
   return (
     <NavbarMenu isBlack={isVisible}>
       <div className="navbarContainer">
-        <img src={imgLogo} alt="Logo finclass" />
+        <Link to="/dashboard">
+          <img src={imgLogo} alt="Logo finclass" />
+        </Link>
         <nav>
           <ul>
-            <Link to="/"><li>Início</li></Link>
-            <Link to="/"><li>Finclasses</li></Link>
-            <Link to="/"><li>Finseries</li></Link>
-            <Link to="/"><li>Finbooks</li></Link>
+            <Link to="/dashboard"><li>Início</li></Link>
+            <Link to="/dashboard"><li>Finclasses</li></Link>
+            <Link to="/dashboard"><li>Finseries</li></Link>
+            <Link to="/dashboard"><li>Finbooks</li></Link>
           </ul>
           <div>
             <button type="button">
