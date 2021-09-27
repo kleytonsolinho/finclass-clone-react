@@ -1,6 +1,10 @@
-import { FaCaretRight, FaPlus } from 'react-icons/fa';
+import {
+  FaCaretRight, FaPlus, FaCircle,
+} from 'react-icons/fa';
 
-import { Container, Shadow, Content } from './styles';
+import {
+  Container, Shadow, Content, Controls,
+} from './styles';
 
 import imgIcon from '../../../assets/images/site/finclassSingular.434bd9e1.svg';
 import imgBruno from '../../../assets/images/site/Foto-professor-bruno-perini.jpg';
@@ -44,6 +48,11 @@ export default function Banner() {
           </div>
         </div>
       </Content>
+      <Controls toogle={1}>
+        <FaCircle className="icon" />
+        <FaCircle className="icon" />
+        <FaCircle className="icon" />
+      </Controls>
     </Container>
   );
 }

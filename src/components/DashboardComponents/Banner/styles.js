@@ -23,6 +23,28 @@ export const Shadow = styled.div`
   background-image: linear-gradient(transparent, #000);
 `;
 
+export const Controls = styled.div`
+  width: 100%;
+  height: 20px;
+  padding: 2rem 0;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    margin-left: 0.7rem;
+    font-size: 0.8rem;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+`;
+
 export const Content = styled.div`
   width: 100%;
   max-width: 1280px;

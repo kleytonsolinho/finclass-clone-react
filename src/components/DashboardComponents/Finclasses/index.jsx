@@ -1,13 +1,15 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
-import learningIcon from '../../assets/images/site/mastermind.svg';
-import arrowImg from '../../assets/images/site/icon-arrow-circle-down.svg';
+import imgIcon from '../../../assets/images/site/finclassSingular.434bd9e1.svg';
+import arrowImg from '../../../assets/images/site/arrow-slide-white.07deb364.svg';
+import arrowRight from '../../../assets/images/site/arrow-right.0da26cf8.svg';
 
-import dataCarousel from './data';
+import dataCarousel from '../../Carousel/data';
 
 import { Container } from './styles';
 
-export default function Carousel() {
+export default function Finclasses() {
   const carousel = useRef(null);
 
   const handleLeftClick = (e) => {
@@ -23,15 +25,11 @@ export default function Carousel() {
   return (
     <Container>
       <div className="header">
-        <img src={learningIcon} alt="" />
-        <h1>
-          <span>Conheça</span>
-          os seus mentores
-        </h1>
-        <p>
-          Os professores da Finclass são os maiores especialistas do mercado
-          financeiro mundial.
-        </p>
+        <img src={imgIcon} alt="Finclasses" />
+        <Link to="/">
+          ver todos
+          <img src={arrowRight} alt="" className="arrowR" />
+        </Link>
       </div>
       <section className="contentSlide">
         <div className="controls">
