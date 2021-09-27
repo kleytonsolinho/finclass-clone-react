@@ -5,9 +5,9 @@ import imgBg from '../../../assets/images/site/_b-home_desk_1.jpg';
 export const Container = styled.div`
   width: 100vw;
   max-width: 100vw;
-  height: 80vh;
+  height: 100vh;
 
-  padding: 88px 2rem 0 2rem;
+  padding: 88px 2rem;
 
   background-image: url(${imgBg});
   background-size: cover;
@@ -16,9 +16,9 @@ export const Container = styled.div`
 
 export const Shadow = styled.div`
   width: 100%;
-  height: 100%;
+  height: 20vh;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   background-image: linear-gradient(transparent, #000);
 `;
