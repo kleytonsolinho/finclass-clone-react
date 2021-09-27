@@ -15,9 +15,9 @@ export const Container = styled.footer`
     margin: 0 auto;
     padding: 4rem 0 2rem 0;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 
     section {
       ul {

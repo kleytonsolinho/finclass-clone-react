@@ -1,58 +1,82 @@
+import { useState, useEffect, useRef } from 'react';
+
 import {
   FaCaretRight, FaPlus, FaCircle,
 } from 'react-icons/fa';
 
 import {
-  Container, Shadow, Content, Controls,
+  SlideHero, Container, Shadow, Content, Controls, Select,
 } from './styles';
 
-import imgIcon from '../../../assets/images/site/finclassSingular.434bd9e1.svg';
-import imgBruno from '../../../assets/images/site/Foto-professor-bruno-perini.jpg';
+import dataBanner from '../../../data/dataBanner';
 
 export default function Banner() {
+  const banner = useRef(null);
+  const [selectBanner, setSelectBanner] = useState(1);
+
+  useEffect(() => {
+    banner.current.scrollLeft += 200; // window.innerWidth;
+  }, [selectBanner]);
+
   return (
-    <Container>
+    <SlideHero ref={banner}>
       <Shadow />
-      <Content>
-        <div className="description">
-          <div className="text">
-            <img src={imgIcon} alt="" />
-            <h1>Axiomas de Zurique</h1>
-            <p>
-              Axiomas de Zurique é um dos livros clássicos do mercado financeiro,
-              e neste finbook você aprenderá quais são os segredos dos suíços para
-              atingir a prosperidade e a riqueza, principalmente com
-              investimentos
-            </p>
-            <div className="btns">
-              <button type="button">
-                <FaCaretRight className="icon" />
-                {' '}
-                assistir
-              </button>
-              <button type="button">
-                <FaPlus className="icon" />
-                {' '}
-                detalhes
-              </button>
+      {dataBanner.map((item) => (
+        <Container key={item.id} bg={item.imgBanner}>
+          <Content>
+            <div className="description">
+              <div className="text">
+                <img src={item.imgCategory} alt="" />
+                <h1>{item.tittle}</h1>
+                <p>
+                  {item.description}
+                </p>
+                <div className="btns">
+                  <button type="button">
+                    <FaCaretRight className="icon" />
+                    {' '}
+                    assistir
+                  </button>
+                  <button type="button">
+                    <FaPlus className="icon" />
+                    {' '}
+                    detalhes
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="details">
-          <div className="expert">
-            <div className="perfilProf">
-              <img src={imgBruno} alt="" />
+            <div className="details">
+              <div className="expert">
+                <div className="perfilProf">
+                  <img src={item.imgProfile} alt="" />
+                </div>
+                <h1>{item.author}</h1>
+                <span>{item.company}</span>
+              </div>
             </div>
-            <h1>Bruno Perini</h1>
-            <span>Sócio Grupo Primo</span>
-          </div>
-        </div>
-      </Content>
-      <Controls toogle={1}>
-        <FaCircle className="icon" />
-        <FaCircle className="icon" />
-        <FaCircle className="icon" />
+          </Content>
+        </Container>
+      ))}
+      <Controls>
+        <Select
+          onClick={() => setSelectBanner(1)}
+          tooggle={selectBanner === 1 ? '#00e7f9' : '#ffffff'}
+        >
+          <FaCircle />
+        </Select>
+        <Select
+          onClick={() => setSelectBanner(2)}
+          tooggle={selectBanner === 2 ? '#00e7f9' : '#ffffff'}
+        >
+          <FaCircle />
+        </Select>
+        <Select
+          onClick={() => setSelectBanner(3)}
+          tooggle={selectBanner === 3 ? '#00e7f9' : '#ffffff'}
+        >
+          <FaCircle />
+        </Select>
       </Controls>
-    </Container>
+    </SlideHero>
   );
 }

@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import learningIcon from '../../assets/images/site/mastermind.svg';
 import arrowImg from '../../assets/images/site/icon-arrow-circle-down.svg';
 
-import dataCarousel from './data';
+import dataCarousel from '../../data/dataCarousel';
 
 import { Container } from './styles';
 

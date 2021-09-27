@@ -1,13 +1,13 @@
-import img01 from '../../assets/images/carousel/thiago-nigro.webp';
-import img02 from '../../assets/images/carousel/guilherme-benchimol.webp';
-import img03 from '../../assets/images/carousel/luciana-seabra.webp';
-import img04 from '../../assets/images/carousel/howard-marks.webp';
-import img05 from '../../assets/images/carousel/samir-kerbage.webp';
-import img06 from '../../assets/images/carousel/fernando-ferreira.webp';
-import img07 from '../../assets/images/carousel/marilia-fontes.webp';
-import img08 from '../../assets/images/carousel/florian-bartunek.webp';
-import img09 from '../../assets/images/carousel/bruno-perini.webp';
-import img10 from '../../assets/images/carousel/fabio-giambiagi.webp';
+import img01 from '../assets/images/carousel/thiago-nigro.webp';
+import img02 from '../assets/images/carousel/guilherme-benchimol.webp';
+import img03 from '../assets/images/carousel/luciana-seabra.webp';
+import img04 from '../assets/images/carousel/howard-marks.webp';
+import img05 from '../assets/images/carousel/samir-kerbage.webp';
+import img06 from '../assets/images/carousel/fernando-ferreira.webp';
+import img07 from '../assets/images/carousel/marilia-fontes.webp';
+import img08 from '../assets/images/carousel/florian-bartunek.webp';
+import img09 from '../assets/images/carousel/bruno-perini.webp';
+import img10 from '../assets/images/carousel/fabio-giambiagi.webp';
 
 const data = [{
   id: 1,

@@ -1,23 +1,38 @@
 import styled from 'styled-components';
 
-import imgBg from '../../../assets/images/site/_b-home_desk_1.jpg';
+export const SlideHero = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-export const Container = styled.div`
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
+  position: relative;
+
+  overflow: hidden;
+`;
+
+export const Container = styled.div`
+  width: 100%;
+  height: 100%;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+  flex: none;
 
   padding: 88px 2rem;
 
-  background-image: url(${imgBg});
+  background-image: url(${(props) => (props.bg)});
   background-size: cover;
   background-repeat: no-repeat;
 `;
 
 export const Shadow = styled.div`
   width: 100%;
-  height: 20vh;
+  height: 50px;
   position: absolute;
+  margin: 0 auto;
   bottom: 0;
   left: 0;
   background-image: linear-gradient(transparent, #000);
@@ -28,20 +43,25 @@ export const Controls = styled.div`
   height: 20px;
   padding: 2rem 0;
 
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 
   display: flex;
   align-items: center;
   justify-content: center;
+`;
 
-  .icon {
-    margin-left: 0.7rem;
-    font-size: 0.8rem;
+export const Select = styled.button`
+  margin-left: 0.7rem;
+  font-size: 0.8rem;
+  color: ${(props) => (props.tooggle)};
+  background: transparent;
+  border: none;
 
-    :hover {
-      cursor: pointer;
-    }
+  :hover {
+    cursor: pointer;
   }
 `;
 
