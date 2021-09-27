@@ -4,7 +4,7 @@ export const Container = styled.section`
   width: 100vw;
   max-width: 1280px;
   height: 500px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 3rem 0;
 
   display: flex;

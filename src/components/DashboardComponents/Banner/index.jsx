@@ -14,8 +14,28 @@ export default function Banner() {
   const banner = useRef(null);
   const [selectBanner, setSelectBanner] = useState(1);
 
+  // function autoPlay() {
+  //   if (selectBanner >= 3) {
+  //     setSelectBanner(1);
+  //   } else {
+  //     setSelectBanner(selectBanner + 1);
+  //   }
+  // }
+
+  // setInterval(autoPlay, 3000);
+
   useEffect(() => {
-    banner.current.scrollLeft += window.innerWidth;
+    if (selectBanner === 1) {
+      banner.current.scrollLeft -= window.innerWidth;
+    }
+
+    if (selectBanner === 2) {
+      banner.current.scrollLeft += window.innerWidth;
+    }
+
+    if (selectBanner === 3) {
+      banner.current.scrollLeft += window.innerWidth * 2;
+    }
   }, [selectBanner]);
 
   return (

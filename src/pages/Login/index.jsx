@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { Container, ButtonPrimary, ButtonOutline } from './styles';
 
 import imgLogo from '../../assets/images/site/logo-finclass.svg';
@@ -31,7 +33,7 @@ export default function Login() {
               <img src={imgRecpass} alt="Recuperar senha" />
             </div>
           </a>
-          <ButtonPrimary type="submit">Entrar</ButtonPrimary>
+          <Link to="/dashboard"><ButtonPrimary type="submit">Entrar</ButtonPrimary></Link>
         </form>
         <h5><span>Ainda não tem uma conta?</span></h5>
         <ButtonOutline> Criar conta</ButtonOutline>

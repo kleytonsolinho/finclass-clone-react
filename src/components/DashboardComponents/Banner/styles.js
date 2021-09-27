@@ -20,8 +20,7 @@ export const SlideGallery = styled.section`
   width: 100%;
   height: 100%;
 
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow: hidden;
 `;
 
 export const Container = styled.div`
@@ -38,7 +37,7 @@ export const Container = styled.div`
 
 export const Shadow = styled.div`
   width: 100%;
-  height: 50px;
+  height: 40vh;
   position: absolute;
   margin: 0 auto;
   bottom: 0;
@@ -76,7 +75,7 @@ export const Select = styled.button`
 export const Content = styled.div`
   width: 100%;
   max-width: 1280px;
-  height: 100%;
+  height: 80%;
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
@@ -130,10 +129,14 @@ export const Content = styled.div`
         font-weight: bold;
 
         background: #ffffff;
-        color: #3f3f3f;
+        color: #000;
         border: none;
 
         transition: all 0.3s;
+
+        &:hover {
+          background: #00e7f9;
+        }
       }
 
       button:nth-of-type(2) {
@@ -142,6 +145,11 @@ export const Content = styled.div`
         border: 1px solid #ffffff;
 
         transition: all 0.3s;
+
+        &:hover {
+          color: #00e7f9;
+          border: 1px solid #00e7f9;
+        }
       }
     }
   }

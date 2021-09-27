@@ -9,7 +9,7 @@ export const Container = styled.section`
   border-top: 2px solid #202227;
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: gray;
     margin: 3rem 0 2rem 0;
   }
