@@ -135,9 +135,8 @@ export const Card = styled.div`
       position: absolute;
       left: 0;
       bottom: -80px;
-      //background: salmon;
 
-      transition: 0.5s all;
+      transition: 0.2s all;
 
       h2 {
         position: absolute;

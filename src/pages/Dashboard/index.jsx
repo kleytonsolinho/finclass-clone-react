@@ -3,6 +3,8 @@ import { Container } from './styles';
 import Header from '../../components/DashboardComponents/Header';
 import Banner from '../../components/DashboardComponents/Banner';
 import FinclassesCarousel from '../../components/DashboardComponents/FinclassesCarousel';
+import Trail from '../../components/DashboardComponents/Trail';
+import Footer from '../../components/DashboardComponents/Footer';
 
 import dataFinclasses from '../../data/dataFinclasses';
 import dataFinseries from '../../data/dataFinseries';
@@ -17,6 +19,9 @@ export default function Dashboard() {
       <Banner />
       <FinclassesCarousel imgCategory={imgFinclasses} data={dataFinclasses} />
       <FinclassesCarousel imgCategory={imgFinseries} data={dataFinseries} />
+      <hr />
+      <Trail />
+      <Footer />
     </Container>
   );
 }

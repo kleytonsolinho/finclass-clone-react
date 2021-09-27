@@ -74,6 +74,7 @@ export const NavbarMenu = styled.header`
 
         &:hover {
           color: #00e7f9;
+          cursor: pointer;
         }
 
         img {
