@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100vw;
+  max-width: 1280px;
   height: 500px;
   padding: 0 2rem;
 
@@ -23,10 +24,15 @@ export const Container = styled.section`
     font-size: 1.2rem;
     font-weight: bold;
 
+    div {
+      display: flex;
+      align-items: center;
+    }
+
     .arrowR {
       margin-left: 5px;
       width: 10px;
-      height: 10px;
+      height: 31px;
     }
   }
 
@@ -100,72 +106,73 @@ export const Container = styled.section`
         cursor: pointer;
       }
     }
+  }
+`;
 
-    .card {
-      width: 290px;
-      height: 420px;
-      display: inline-block;
-      position: relative;
-      cursor: pointer;
-      margin: 10px 5px;
-      border-radius: 6px;
-      overflow: hidden;
+export const Card = styled.div`
+    position: relative;
+    display: inline-block;
+    width: 290px;
+    height: 420px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    flex: none;
 
-      background: aquamarine;
+    img {
+      height: 100%;
+    }
 
-      img {
-        height: 100%;
-      }
-
+    &:hover {
       .card-content {
-        width: 100%;
-        padding: 1rem;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background: red;
+        h1 {
+          bottom: 70px;
+        }
+
+        p {
+          opacity: 1;
+          bottom: 20px;
+        }
       }
+    }
+
+    .card-content {
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+      position: absolute;
+      left: 0;
+      bottom: 0;
 
       h1 {
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        white-space: nowrap;
         position: absolute;
-        left: 20px;
-        bottom: 70px;
-        font-size: 2rem;
-        color: transparent;
-        -webkit-text-stroke: 1px #ffffff;
+        left: 0;
+        bottom: 40px;
+        font-size: 1.3rem;
+        padding: 0 1.5rem;
+        color: #ffffff;
 
         transition: 1s all;
       }
 
       p {
         display: block;
-        width: 165px;
-        font-size: 1rem;
+        width: 100%;
+        padding: 0 1.5rem;
+        font-size: 0.8rem;
         font-weight: 300;
         position: absolute;
-        right: 10px;
-        bottom: -100px;
-        text-align: left;
+        left: 0;
+        bottom: 0;
         opacity: 0;
-        white-space: pre-wrap;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         line-height: 24px;
 
         transition: 1s all;
       }
-
-      &:hover {
-        h1 {
-          color: #ffffff;
-        }
-
-        p {
-          opacity: 1;
-          bottom: 50px;
-        }
-      }
     }
-  }
 `;

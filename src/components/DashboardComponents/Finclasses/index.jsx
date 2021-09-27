@@ -5,9 +5,9 @@ import imgIcon from '../../../assets/images/site/finclassSingular.434bd9e1.svg';
 import arrowImg from '../../../assets/images/site/arrow-slide-white.07deb364.svg';
 import arrowRight from '../../../assets/images/site/arrow-right.0da26cf8.svg';
 
-import dataCarousel from '../../../data/dataFinseries';
+import dataCarousel from '../../../data/dataFinclasses';
 
-import { Container } from './styles';
+import { Container, Card } from './styles';
 
 export default function Finclasses() {
   const carousel = useRef(null);
@@ -27,10 +27,10 @@ export default function Finclasses() {
       <div className="header">
         <img src={imgIcon} alt="Finclasses" />
         {dataCarousel.length >= 5 && (
-          <Link to="/">
-            ver todos
+          <div>
+            <Link to="/">ver todos</Link>
             <img src={arrowRight} alt="" className="arrowR" />
-          </Link>
+          </div>
         )}
       </div>
       <section className="contentSlide">
@@ -46,15 +46,15 @@ export default function Finclasses() {
         )}
         <div className="slideGalery" ref={carousel}>
           {dataCarousel.map((item) => (
-            <div className="card" key={item.id}>
+            <Card key={item.id}>
               <img src={item.img} alt="" />
-              {/* <div className="card-content">
+              <div className="card-content">
                 <h2>{item.category}</h2>
                 <h1>{item.name}</h1>
                 <span>{item.company}</span>
                 <p>{item.description}</p>
-              </div> */}
-            </div>
+              </div>
+            </Card>
           ))}
         </div>
       </section>
