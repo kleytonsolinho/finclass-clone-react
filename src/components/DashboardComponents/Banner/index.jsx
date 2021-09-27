@@ -26,7 +26,7 @@ export default function Banner() {
 
   useEffect(() => {
     if (selectBanner === 1) {
-      banner.current.scrollLeft -= window.innerWidth;
+      banner.current.scrollLeft = 0;
     }
 
     if (selectBanner === 2) {
