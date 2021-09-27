@@ -12,7 +12,7 @@ export default function Footer() {
   }
   return (
     <Container>
-      <div>
+      <div className="nav-menu-footer">
         <section>
           <img src={logoImg} alt="" />
         </section>
@@ -47,19 +47,19 @@ export default function Footer() {
             <a href="/"><li>FAQ</li></a>
           </ul>
         </section>
+        <Copyright>
+          <p>2021 © Todos os direitos reservados. Finclass</p>
+          <div className="toTheTop">
+            <span>Voltar para o topo</span>
+            <button
+              type="button"
+              onClick={scrollToTop}
+            >
+              <img src={arrowImg} alt="" width={40} height={40} />
+            </button>
+          </div>
+        </Copyright>
       </div>
-      <Copyright>
-        <p>2021 © Todos os direitos reservados. Finclass</p>
-        <div className="toTheTop">
-          <span>Voltar para o topo</span>
-          <button
-            type="button"
-            onClick={scrollToTop}
-          >
-            <img src={arrowImg} alt="" width={40} height={40} />
-          </button>
-        </div>
-      </Copyright>
     </Container>
   );
 }

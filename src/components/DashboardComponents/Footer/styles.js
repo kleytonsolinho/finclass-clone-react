@@ -2,14 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.footer`
   width: 100%;
-  max-width: 1280px;
   height: 450px;
   padding: 0 2rem;
   margin: 0 auto;
 
   background: rgba(32, 34, 39, 0.5);
 
-  div {
+  .nav-menu-footer {
+    width: 100%;
+    max-width: 1280px;
     padding: 4rem 0 2rem 0;
 
     display: grid;
