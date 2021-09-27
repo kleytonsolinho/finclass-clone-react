@@ -5,7 +5,7 @@ import imgIcon from '../../../assets/images/site/finclassSingular.434bd9e1.svg';
 import arrowImg from '../../../assets/images/site/arrow-slide-white.07deb364.svg';
 import arrowRight from '../../../assets/images/site/arrow-right.0da26cf8.svg';
 
-import dataCarousel from '../../Carousel/data';
+import dataCarousel from '../../../data/dataFinclasses';
 
 import { Container } from './styles';
 
