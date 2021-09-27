@@ -5,6 +5,7 @@ export const Container = styled.footer`
   height: 450px;
   padding: 0 2rem;
   margin: 0 auto;
+  margin-top: 5rem;
 
   background: rgba(32, 34, 39, 0.5);
 
@@ -30,6 +31,10 @@ export const Container = styled.footer`
 
       a {
         color: gray;
+
+        &:hover {
+          color: #ffffff;
+        }
       }
     }
   }
