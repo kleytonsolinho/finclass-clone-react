@@ -5,7 +5,7 @@ export const Container = styled.section`
   max-width: 1280px;
   height: 500px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 2rem;
 
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@ export const Container = styled.section`
     height: 450px;
 
     &:hover {
-      .controls {
+      button {
         opacity: 1;
       }
     }
@@ -63,30 +63,26 @@ export const Container = styled.section`
     display: none;
   }
 
-  .controls {
+  button {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     position: absolute;
+    top: 0;
 
-    width: 140px;
+    width: 70px;
     height: 450px;
     background: transparent;
-    z-index: 10;
+    z-index: 2;
     opacity: 0;
+    border: none;
 
     transition: 0.5s all;
 
-    button {
-      background: transparent;
-      width: 70px;
-      height: 100%;
-      border: none;
-    }
-
     button:first-of-type {
       background-image: linear-gradient(to right, #0b0b0e, transparent);
+      left: 0;
 
       img {
         transform: rotate(180deg);
@@ -99,6 +95,7 @@ export const Container = styled.section`
 
     button:last-of-type {
       background-image: linear-gradient(to left, #0b0b0e, transparent);
+      right: 0;
 
       img {
         &:hover {
