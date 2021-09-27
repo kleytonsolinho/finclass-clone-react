@@ -13,17 +13,21 @@ export const SlideHero = styled.section`
 `;
 
 export const SlideGallery = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 100%;
 
   overflow-y: hidden;
   overflow-x: scroll;
-  flex: none;
 `;
 
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+  flex: none;
 
   padding: 88px 2rem;
 

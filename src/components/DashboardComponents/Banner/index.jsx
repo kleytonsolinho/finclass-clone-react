@@ -15,7 +15,7 @@ export default function Banner() {
   const [selectBanner, setSelectBanner] = useState(1);
 
   useEffect(() => {
-    banner.current.scrollLeft += 200; // window.innerWidth;
+    banner.current.scrollLeft += window.innerWidth;
   }, [selectBanner]);
 
   return (
