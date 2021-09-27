@@ -174,6 +174,7 @@ export const Card = styled.div`
       p {
         display: block;
         width: 100%;
+        height: 4rem;
         padding: 0 1.5rem;
         font-size: 0.8rem;
         font-weight: 300;
