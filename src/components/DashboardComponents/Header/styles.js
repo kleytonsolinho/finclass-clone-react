@@ -11,8 +11,7 @@ export const NavbarMenu = styled.header`
 
   z-index: 10;
   border-bottom: 1px solid rgba(134, 136, 141, 0.25);
-  background: transparent;
-  //background: ${(props) => (props.isBlack ? 'black' : 'transparent')};
+  background: ${(props) => (props.isBlack ? 'black' : 'transparent')};
 
   .navbarContainer {
     width: 100%;

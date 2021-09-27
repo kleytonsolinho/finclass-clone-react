@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useNavbarScoll } from '../../context/NavbarScroll';
 
 import Header from '../../components/Header';
 import Subscribebar from '../../components/Subscribebar';
@@ -15,23 +15,11 @@ import arrowImg from '../../assets/images/site/icon-arrow-circle-down.svg';
 import { Container } from './styles';
 
 export default function Home() {
-  const [isVisible, setisVisible] = useState(false);
-
-  function handleScroll() {
-    if (window.scrollY >= 150) {
-      setisVisible(true);
-      return;
-    }
-    setisVisible(false);
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  });
+  const { isVisible } = useNavbarScoll();
 
   return (
     <>
-      <Header isBlack={isVisible} />
+      <Header />
 
       <Container>
         <section className="content">

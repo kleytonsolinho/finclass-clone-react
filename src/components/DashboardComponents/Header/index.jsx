@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import { FaSearch, FaCaretDown } from 'react-icons/fa';
+
+import { useNavbarScoll } from '../../../context/NavbarScroll';
 
 import imgLogo from '../../../assets/images/site/logo-finclass.svg';
 import imgAvatar from '../../../assets/images/site/avataaars.svg';
@@ -8,8 +10,21 @@ import imgAvatar from '../../../assets/images/site/avataaars.svg';
 import { NavbarMenu } from './styles';
 
 export default function Header() {
+  const { isVisible, setisVisible } = useNavbarScoll();
+
+  function handleScroll() {
+    if (window.scrollY >= 150) {
+      setisVisible(true);
+      return;
+    }
+    setisVisible(false);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
   return (
-    <NavbarMenu>
+    <NavbarMenu isBlack={isVisible}>
       <div className="navbarContainer">
         <img src={imgLogo} alt="Logo finclass" />
         <nav>
