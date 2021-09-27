@@ -11,6 +11,7 @@ export const Container = styled.footer`
   .nav-menu-footer {
     width: 100%;
     max-width: 1280px;
+    margin: 0 auto;
     padding: 4rem 0 2rem 0;
 
     display: grid;
