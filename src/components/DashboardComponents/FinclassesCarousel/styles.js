@@ -151,7 +151,6 @@ export const Card = styled.div`
       h1 {
         display: block;
         width: 100%;
-        background: aqua;
         white-space: pre-line;
         position: absolute;
         left: 0;
@@ -166,8 +165,10 @@ export const Card = styled.div`
         left: 0;
         top: 80px;
         font-size: 0.9rem;
+        font-weight: 300;
         padding: 0 1.5rem;
-        color: gray;
+        opacity: 0.8;
+        color: #ffffff;
       }
 
       p {
