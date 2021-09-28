@@ -25,7 +25,7 @@ export const Aulas = styled.div`
   }
 `;
 
-export const Card = styled.div`
+export const Card = styled.a`
   width: 100%;
   height: 200px;
   margin: 3rem 0;

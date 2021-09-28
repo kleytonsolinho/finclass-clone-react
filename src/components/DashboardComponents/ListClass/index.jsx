@@ -13,7 +13,7 @@ export default function ListClass() {
       <Aulas>
         <h1>Episódios</h1>
         {dataClass.map((item) => (
-          <Card>
+          <Card key={item.id} href="/watch">
             <div className="video">
               <div className="progress">
                 <div className="bar" />

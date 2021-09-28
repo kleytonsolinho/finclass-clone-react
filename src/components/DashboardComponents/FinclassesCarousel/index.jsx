@@ -43,7 +43,7 @@ export default function FinclassesCarousel({ imgCategory, data }) {
         )}
         <div className="slideGalery" ref={carousel}>
           {data.map((item) => (
-            <Card key={item.id}>
+            <Card key={item.id} href="/expert">
               <img src={item.img} alt="" />
               <div className="card-content">
                 <h2>{item.category}</h2>

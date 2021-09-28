@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import {
   FaCaretRight, FaPlus, FaCircle,
@@ -12,7 +13,14 @@ import dataBanner from '../../../data/dataBanner';
 
 export default function Banner() {
   const banner = useRef(null);
+  const history = useHistory();
   const [selectBanner, setSelectBanner] = useState(1);
+
+  function handleExpert(e) {
+    e.preventDefault();
+
+    history.push('/expert');
+  }
 
   useEffect(() => {
     const autoPlay = setTimeout(() => {
@@ -56,12 +64,12 @@ export default function Banner() {
                     {item.description}
                   </p>
                   <div className="btns">
-                    <button type="button">
+                    <button type="button" onClick={handleExpert}>
                       <FaCaretRight className="icon" />
                       {' '}
                       assistir
                     </button>
-                    <button type="button">
+                    <button type="button" onClick={handleExpert}>
                       <FaPlus className="icon" />
                       {' '}
                       detalhes

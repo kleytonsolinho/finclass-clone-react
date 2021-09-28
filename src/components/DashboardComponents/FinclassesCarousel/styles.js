@@ -107,7 +107,7 @@ export const Container = styled.section`
   }
 `;
 
-export const Card = styled.div`
+export const Card = styled.a`
     position: relative;
     display: inline-block;
     width: 290px;
