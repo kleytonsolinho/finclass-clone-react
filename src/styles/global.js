@@ -45,6 +45,7 @@ export const GlobalStyles = createGlobalStyle`
 body {
   background: var(--cc-bg);
   color: var(--cc-text);
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
