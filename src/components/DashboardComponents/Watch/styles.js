@@ -160,6 +160,7 @@ export const Teacher = styled.div`
     h1 {
       font-size: 1rem;
       font-weight: bold;
+      margin-bottom: 5px;
     }
 
     span {

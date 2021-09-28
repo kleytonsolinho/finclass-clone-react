@@ -40,7 +40,7 @@ export const Shadow = styled.div`
   height: 40vh;
   position: absolute;
   margin: 0 auto;
-  bottom: 0;
+  bottom: -17px;
   left: 0;
   background-image: linear-gradient(transparent, #000);
 `;
@@ -53,7 +53,7 @@ export const Controls = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 3;
 
   display: flex;
   align-items: center;

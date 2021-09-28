@@ -51,7 +51,6 @@ export default function Banner() {
 
   return (
     <SlideHero>
-      <Shadow />
       <SlideGallery ref={banner}>
         {dataBanner.map((item) => (
           <Container key={item.id} bg={item.imgBanner}>
@@ -110,6 +109,7 @@ export default function Banner() {
           <FaCircle />
         </Select>
       </Controls>
+      <Shadow />
     </SlideHero>
   );
 }

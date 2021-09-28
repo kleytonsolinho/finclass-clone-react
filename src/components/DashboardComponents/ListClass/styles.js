@@ -158,12 +158,11 @@ export const Help = styled.div`
     form {
       width: 100%;
       margin-top: 10px;
-      background: #202227;
     }
 
     textarea {
       width: 100%;
-      background: transparent;
+      background: #202227;
       border-radius: 6px;
       caret-color: #00e7f9;
       color: #ffffff;
