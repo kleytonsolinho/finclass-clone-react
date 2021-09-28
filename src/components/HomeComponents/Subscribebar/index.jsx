@@ -1,6 +1,6 @@
 import { Container } from './styles';
 
-import Button from '../Buttondefault';
+import Button from '../../Global/Buttondefault';
 
 export default function Subscribebar() {
   return (

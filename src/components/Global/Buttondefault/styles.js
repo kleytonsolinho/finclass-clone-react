@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
 
-  width: 20rem;
+  width: ${(props) => (props.width)}%;
   padding: 10px 0;
   font-size: 1rem;
   line-height: 2rem;
-  background-color: #00e7f9;
-  color: #000;
-  border: 1px solid #00e7f9;
+  background-color: ${(props) => (props.primary === true ? props.color : 'transparent')};
+  color: ${(props) => (props.primary === true ? '#000000' : props.color)};;
+  border: 1px solid ${(props) => (props.primary !== true ? props.color : 'transparent')};
   display: block;
   text-align: center;
   text-decoration: none;

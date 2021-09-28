@@ -1,14 +1,22 @@
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import {
   Container, Header, Content, Box, Policy,
 } from './styles';
 
-import Button from '../../components/Buttondefault';
+import Button from '../../components/Global/Buttondefault';
 
 import imgLogo from '../../assets/images/site/logo-finclass.svg';
 
 export default function Register() {
+  const history = useHistory();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    history.push('/dashboard');
+  }
+
   return (
     <Container>
       <Header>
@@ -17,7 +25,7 @@ export default function Register() {
       </Header>
       <Content>
         <Box>
-          <form autoComplete="off">
+          <form autoComplete="off" onSubmit={handleSubmit}>
             <span>
               PASSO:
               {' '}
@@ -47,9 +55,14 @@ export default function Register() {
               Celular
               <input name="phone" type="text" placeholder="(11) 9 9999-9999" />
             </label>
-            <Link to="/dashboard">
-              <Button text="Continuar" />
-            </Link>
+            <Button
+              width={100}
+              primary
+              color="#00e7f9"
+              type="submit"
+            >
+              Continuar
+            </Button>
           </form>
         </Box>
         <Policy>

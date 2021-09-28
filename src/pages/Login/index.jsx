@@ -1,11 +1,20 @@
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
-import { Container, ButtonPrimary, ButtonOutline } from './styles';
+import Button from '../../components/Global/Buttondefault';
+
+import { Container } from './styles';
 
 import imgLogo from '../../assets/images/site/logo-finclass.svg';
 import imgRecpass from '../../assets/images/site/clock.4c1870d0.svg';
 
 export default function Login() {
+  const history = useHistory();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    history.push('/dashboard');
+  }
   return (
     <Container>
       <div>
@@ -18,7 +27,7 @@ export default function Login() {
           {' '}
           do mundo!
         </h1>
-        <form onSubmit="" autoComplete="off">
+        <form onSubmit={handleSubmit} autoComplete="off">
           <label>
             E-mail
             <input name="email" type="email" placeholder="Insira seu e-mail" />
@@ -33,12 +42,23 @@ export default function Login() {
               <img src={imgRecpass} alt="Recuperar senha" />
             </div>
           </a>
-          <Link to="/dashboard">
-            <ButtonPrimary type="submit">Entrar</ButtonPrimary>
-          </Link>
+          <Button
+            width={100}
+            primary
+            color="#00e7f9"
+            type="submit"
+          >
+            Entrar
+          </Button>
         </form>
         <h5><span>Ainda não tem uma conta?</span></h5>
-        <ButtonOutline> Criar conta</ButtonOutline>
+        <Button
+          width={100}
+          color="#00e7f9"
+          type="submit"
+        >
+          Criar Conta
+        </Button>
       </div>
     </Container>
   );

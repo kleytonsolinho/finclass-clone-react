@@ -72,6 +72,7 @@ export const Box = styled.div`
   form {
     width: 100%;
     font-weight: 300;
+    padding: 0 3rem;
 
     span {
       color: gray;

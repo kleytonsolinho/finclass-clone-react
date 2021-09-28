@@ -126,35 +126,3 @@ export const Container = styled.section`
     z-index: 5;
   }
 `;
-
-export const ButtonPrimary = styled.button`
-  width: 100%;
-  height: 48px;
-  border-radius: 6px;
-  background: #00e7f9;
-  border: none;
-  color: #000000;
-  font-size: 1rem;
-  margin: 2rem 0;
-
-  &:hover {
-    background: #00e7f9;
-    color: #000000;
-  }
-`;
-
-export const ButtonOutline = styled.button`
-  width: 100%;
-  height: 48px;
-  border-radius: 6px;
-  border: 1.5px solid #00e7f9;
-  background: transparent;
-  color: #00e7f9;
-  font-size: 1rem;
-  margin: 2rem 0;
-
-  &:hover {
-    background: #00e7f9;
-    color: #000000;
-  }
-`;

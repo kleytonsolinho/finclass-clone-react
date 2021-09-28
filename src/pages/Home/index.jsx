@@ -1,12 +1,12 @@
 import { useNavbarScoll } from '../../context/NavbarScroll';
 
-import Header from '../../components/Header';
-import Subscribebar from '../../components/Subscribebar';
-import Button from '../../components/Buttondefault';
+import Header from '../../components/HomeComponents/Header';
+import Subscribebar from '../../components/HomeComponents/Subscribebar';
+import Button from '../../components/Global/Buttondefault';
 
-import Carousel from '../../components/Carousel';
-import Categorys from '../../components/Categorys';
-import Video from '../../components/Video';
+import Carousel from '../../components/HomeComponents/Carousel';
+import Categorys from '../../components/HomeComponents/Categorys';
+import Video from '../../components/HomeComponents/Video';
 
 import appFinclass from '../../assets/images/site/app-finclass.webp';
 import lightningIcon from '../../assets/images/site/thunder-lightning-circle.svg';
