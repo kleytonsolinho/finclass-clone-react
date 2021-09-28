@@ -37,7 +37,7 @@ export const Container = styled.div`
 
 export const Shadow = styled.div`
   width: 100%;
-  height: 40vh;
+  height: 150px;
   position: absolute;
   margin: 0 auto;
   bottom: -17px;
