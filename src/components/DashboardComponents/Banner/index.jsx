@@ -90,24 +90,14 @@ export default function Banner() {
         ))}
       </SlideGallery>
       <Controls>
-        <Select
-          onClick={() => setSelectBanner(1)}
-          tooggle={selectBanner === 1 ? '#00e7f9' : '#ffffff'}
-        >
-          <FaCircle />
-        </Select>
-        <Select
-          onClick={() => setSelectBanner(2)}
-          tooggle={selectBanner === 2 ? '#00e7f9' : '#ffffff'}
-        >
-          <FaCircle />
-        </Select>
-        <Select
-          onClick={() => setSelectBanner(3)}
-          tooggle={selectBanner === 3 ? '#00e7f9' : '#ffffff'}
-        >
-          <FaCircle />
-        </Select>
+        {dataBanner.map((item) => (
+          <Select
+            onClick={() => setSelectBanner(item.id)}
+            tooggle={selectBanner === item.id ? '#00e7f9' : '#ffffff'}
+          >
+            <FaCircle />
+          </Select>
+        ))}
       </Controls>
       <Shadow />
     </SlideHero>

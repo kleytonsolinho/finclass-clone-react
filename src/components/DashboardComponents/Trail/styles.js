@@ -6,12 +6,12 @@ export const Container = styled.section`
   padding: 0 2rem;
   margin: 0 auto;
 
-  border-top: 2px solid #202227;
-
   h3 {
     font-size: 1.3rem;
     color: gray;
     margin: 3rem 0 2rem 0;
+    border-top: 2px solid #202227;
+    padding: 2rem 0;
   }
 `;
 

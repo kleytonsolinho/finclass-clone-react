@@ -5,7 +5,7 @@ export const Container = styled.section`
   max-width: 1280px;
   height: 500px;
   margin: 2rem auto;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
 
   display: flex;
   align-items: center;
@@ -15,6 +15,7 @@ export const Container = styled.section`
   .header {
     width: 100%;
     height: 50px;
+    padding: 2rem 0;
 
     display: flex;
     align-items: center;
