@@ -1,5 +1,6 @@
 import img01 from '../assets/images/Finseries/01.jpg';
 import img02 from '../assets/images/Finseries/02.jpg';
+import img03 from '../assets/images/Finseries/03.jpg';
 
 const data = [
   {
@@ -16,6 +17,13 @@ const data = [
     company: '',
     description: 'A bolsa de valores é uma loucura: os preços sobem, os preços descem e tudo muda a todo instante. Agora, e se existisse uma central de atendimento para a qual você pudesse ligar e tirar todas as suas dúvidas a respeito da bolsa, e finalmente entender como ela funciona? Para essa missão, nós trouxemos a maravilhosa Thati Lopes, que irá te explicar de maneira simples e humorada o básico sobre a bolsa, tin-tin por tin-tin. Esse é o tweet.',
     img: img02,
+  }, {
+    id: 3,
+    category: '',
+    name: 'Na Prática',
+    company: '',
+    description: 'Como comprar uma ação... como usar o home broker... como configurar sua carteira de bitcoins... O “Na Prática” é uma série original Finclass onde você aprende NA PRÁTICA os mais diversos conceitos, estratégias e formas de investir que você viu nas aulas da Finclass!',
+    img: img03,
   },
 ];
 
