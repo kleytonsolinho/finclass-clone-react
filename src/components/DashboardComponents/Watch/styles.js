@@ -74,6 +74,18 @@ export const VideoList = styled.div`
     overflow-x: hidden;
   }
 
+  .list::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .list::-webkit-scrollbar-thumb {
+    background: #86888d;
+  }
+
+  .list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
   .item {
     position: relative;
     width: 100%;
