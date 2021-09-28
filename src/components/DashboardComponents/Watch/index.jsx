@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 
 import arrowImg from '../../../assets/images/site/icon-arrow-circle-down.svg';
+import imgTeacher from '../../../assets/images/aulas/Thiago-nigro-min.jpg';
 
 import {
-  Container, ContentPlayer, ContentInfo, Header, Player, VideoList, Resume, Info,
+  Container, ContentPlayer, ContentInfo, Header, Player, VideoList, Resume, Info, Teacher, About,
 } from './styles';
 
 export default function Watch() {
   return (
     <Container>
       <Header>
-        <Link to="/expert">
+        <Link to="/dashboard/expert">
           <img src={arrowImg} alt="" />
         </Link>
         <h1>Trailer</h1>
@@ -44,7 +45,22 @@ export default function Watch() {
           </div>
         </Resume>
         <Info>
-          info
+          <Teacher>
+            <div className="foto">
+              <img src={imgTeacher} alt="" />
+            </div>
+            <div className="name">
+              <h1>Thiago Nigro</h1>
+              <span>Grupo Primo</span>
+            </div>
+          </Teacher>
+          <About>
+            <h1>Sobre</h1>
+            <p>
+              Aprenda como diversificar sua carteira e ganhar dinheiro no longo
+              prazo com Thiago Nigro, o o maior influenciador de finanças do mundo.
+            </p>
+          </About>
         </Info>
       </ContentInfo>
     </Container>

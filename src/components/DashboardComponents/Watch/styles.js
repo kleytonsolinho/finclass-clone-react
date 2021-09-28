@@ -103,6 +103,63 @@ export const Info = styled.div`
   width: 100%;
   height: 100%;
   max-width: 400px;
+  padding-left: 2rem;
+`;
 
-  background: coral;
+export const Teacher = styled.div`
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 80px;
+    }
+  }
+
+  .name{
+    margin-left: 1rem;
+
+    h1 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    span {
+      font-weight: normal;
+      color: #86888d;
+    }
+  }
+`;
+
+export const About = styled.div`
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  h1 {
+    color: #86888d;
+    margin: 1rem 0;
+  }
+
+  p {
+    color: #ffffff;
+    opacity: 0.8;
+  }
 `;
