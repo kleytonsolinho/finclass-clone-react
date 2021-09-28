@@ -26,16 +26,18 @@ export default function Watch() {
           <iframe width="830" height="465" src="https://www.youtube.com/embed/851RnVMicWI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         </Player>
         <VideoList>
-          <div>
+          <div className="top">
             <h1>Todos episódios</h1>
           </div>
-          <ul>
+          <div className="list">
             {dataClass.map((item) => (
-              <li key={item.id}>
-                <ItemVideoList data={item} description={false} />
-              </li>
+              <a key={item.id} href="/dashboard/expert/watch">
+                <div className="item">
+                  <ItemVideoList data={item} description={false} />
+                </div>
+              </a>
             ))}
-          </ul>
+          </div>
         </VideoList>
       </ContentPlayer>
       <ContentInfo>

@@ -60,32 +60,34 @@ export const VideoList = styled.div`
 
   margin-bottom: 3rem;
   padding-left: 1rem;
-  overflow: hidden scroll;
 
-  div {
+  .top {
     width: 100%;
     height: 23px;
     margin-bottom: 3rem;
   }
 
-  ul {
-    list-style: none;
-    position: relative;
+  .list {
+    margin-bottom: 2rem;
+    overflow-y: scroll;
+    max-height: 500px;
+    overflow-x: hidden;
   }
 
-  ul li {
+  .item {
+    position: relative;
     width: 100%;
     height: 128px;
     padding: 1.5rem 0;
     margin: 1rem 0;
     cursor: pointer;
-    background-image: linear-gradient(90deg, #202227 -2.03%, rgba(32, 34, 39, 0) 101.79%);
 
     display: flex;
     align-items: center;
 
     &:hover {
-      border-left: 1px solid #00e7f9;
+      border-left: 2px solid #00e7f9;
+      background-image: linear-gradient(90deg, #202227 -2.03%, rgba(32, 34, 39, 0) 101.79%);
     }
   }
 `;

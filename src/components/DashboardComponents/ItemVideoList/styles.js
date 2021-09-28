@@ -13,6 +13,7 @@ export const Container = styled.div`
 export const Thumbnail = styled.div`
   display: block;
   position: relative;
+  max-width: 50%;
 
   .progress {
     width: 100%;
@@ -26,7 +27,7 @@ export const Thumbnail = styled.div`
   }
 
   img {
-    height: 100%;
+    width: 100%;
   }
 
   span {
@@ -45,6 +46,7 @@ export const Thumbnail = styled.div`
 
 export const Info = styled.div`
   padding: 2rem;
+  max-width: 50%;
 
   span {
     display: inline-block;
