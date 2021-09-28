@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
-
 import { FaRegCalendarAlt } from 'react-icons/fa';
+
+import ItemVideoList from '../ItemVideoList';
 
 import arrowImg from '../../../assets/images/site/icon-arrow-circle-down.svg';
 import imgTeacher from '../../../assets/images/aulas/Thiago-nigro-min.jpg';
+
+import dataClass from '../../../data/dataClass';
 
 import {
   Container, ContentPlayer, ContentInfo, Header, Player, VideoList, Resume, Info, Teacher, About,
@@ -23,15 +26,15 @@ export default function Watch() {
           <iframe width="830" height="465" src="https://www.youtube.com/embed/851RnVMicWI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         </Player>
         <VideoList>
-          <h1>Todos episódios</h1>
+          <div>
+            <h1>Todos episódios</h1>
+          </div>
           <ul>
-            <li>
-              <img src="" alt="" />
-              <div>
-                <span>Teaser</span>
-                <h2>Trailer</h2>
-              </div>
-            </li>
+            {dataClass.map((item) => (
+              <li key={item.id}>
+                <ItemVideoList data={item} description={false} />
+              </li>
+            ))}
           </ul>
         </VideoList>
       </ContentPlayer>

@@ -30,7 +30,7 @@ export const ContentPlayer = styled.div`
   height: 637px;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 `;
 
@@ -55,23 +55,34 @@ export const Player = styled.div`
 export const VideoList = styled.div`
   width: 100%;
   height: 100%;
+  max-height: 560px;
   max-width: 400px;
 
+  margin-bottom: 3rem;
   padding-left: 1rem;
+  overflow: hidden scroll;
 
-  h1 {
+  div {
+    width: 100%;
+    height: 23px;
     margin-bottom: 3rem;
   }
 
   ul {
     list-style: none;
+    position: relative;
   }
 
   ul li {
     width: 100%;
     height: 128px;
     padding: 1.5rem 0;
+    margin: 1rem 0;
+    cursor: pointer;
     background-image: linear-gradient(90deg, #202227 -2.03%, rgba(32, 34, 39, 0) 101.79%);
+
+    display: flex;
+    align-items: center;
 
     &:hover {
       border-left: 1px solid #00e7f9;
