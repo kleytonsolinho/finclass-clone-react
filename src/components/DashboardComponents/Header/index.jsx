@@ -31,10 +31,10 @@ export default function Header() {
         </Link>
         <nav>
           <ul>
-            <Link to="/dashboard"><li>Início</li></Link>
-            <Link to="/dashboard"><li>Finclasses</li></Link>
-            <Link to="/dashboard"><li>Finseries</li></Link>
-            <Link to="/dashboard"><li>Finbooks</li></Link>
+            <li><Link to="/dashboard">Início</Link></li>
+            <li><Link to="/dashboard">Finclasses</Link></li>
+            <li><Link to="/dashboard">Finseries</Link></li>
+            <li><Link to="/dashboard">Finbooks</Link></li>
           </ul>
           <div>
             <button type="button">

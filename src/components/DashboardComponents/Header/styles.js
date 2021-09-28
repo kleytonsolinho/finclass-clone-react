@@ -27,21 +27,31 @@ export const NavbarMenu = styled.header`
       align-items: center;
       justify-content: space-between;
       margin-left: 6rem;
-
+      height: 100%;
+      display: flex;
+      align-items: center;
 
       ul {
         display: flex;
         align-items: center;
         list-style: none;
+        height: 100%;
+      }
+
+      li:first-of-type {
+        margin-left: 0;
       }
 
       li {
+        display: flex;
+        align-items: center;
+
         position: relative;
         font-size: 1.1rem;
-        font-weight: 400;
+        font-weight: bold;
         line-height: 115%;
         height: 100%;
-        margin-left: 2rem;
+        margin-left: 3rem;
         color: #ffffff;
         opacity: 0.8;
 
@@ -49,6 +59,7 @@ export const NavbarMenu = styled.header`
 
         &:hover {
           opacity: 1;
+          border-bottom: 3px solid #00e7f9;
         }
       }
     }
@@ -83,6 +94,7 @@ export const NavbarMenu = styled.header`
 
         h1 {
           margin: 0 0.5rem;
+          font-size: 1.2rem;
         }
 
         .icon {
