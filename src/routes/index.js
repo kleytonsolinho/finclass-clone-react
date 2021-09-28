@@ -12,9 +12,9 @@ export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/dashboard" component={Dashboard} />
-      <Route path="/expert" component={Expert} />
-      <Route path="/watch" component={Watch} />
+      <Route path="/dashboard" exact component={Dashboard} />
+      <Route path="/dashboard/expert" exact component={Expert} />
+      <Route path="/dashboard/expert/watch" exact component={Watch} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
       <Redirect from="*" to="/404" component={Error} />

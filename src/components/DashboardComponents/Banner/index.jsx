@@ -19,7 +19,7 @@ export default function Banner() {
   function handleExpert(e) {
     e.preventDefault();
 
-    history.push('/expert');
+    history.push('/dashboard/expert');
   }
 
   useEffect(() => {
