@@ -50,7 +50,7 @@ export const Info = styled.div`
 
   span {
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
     padding: 6px;
     background-color: #202227;
@@ -60,7 +60,7 @@ export const Info = styled.div`
 
   h3 {
     margin: 0.8rem 0 0.5rem 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   p {
