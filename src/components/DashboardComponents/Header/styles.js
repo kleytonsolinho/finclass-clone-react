@@ -10,8 +10,7 @@ export const NavbarMenu = styled.header`
   transform: translateX(-50%);
 
   z-index: 10;
-  border-bottom: 1px solid rgba(134, 136, 141, 0.25);
-  background: ${(props) => (props.isBlack ? 'black' : 'transparent')};
+  background: ${(props) => (props.isBlack ? 'black' : 'linear-gradient(to bottom, #000000, transparent)')};
 
   .navbarContainer {
     width: 100%;
