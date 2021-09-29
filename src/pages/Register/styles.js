@@ -62,7 +62,7 @@ export const Box = styled.div`
   border-radius: 8px;
   padding: 2rem 0;
 
-  form, label {
+  form {
     display: flex;
     align-items: center;
     justify-content: center;
