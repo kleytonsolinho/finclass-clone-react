@@ -37,7 +37,14 @@ export default function Home() {
             <br />
             investimentos com os maiores especialistas do mercado.
           </p>
-          <Button text="Assine agora" />
+          <Button
+            width={50}
+            primary
+            color="#00e7f9"
+            type="submit"
+          >
+            Assine agora
+          </Button>
           <span>
             Assine a partir de
             <strong> R$ 39,90/mês no plano anual.</strong>

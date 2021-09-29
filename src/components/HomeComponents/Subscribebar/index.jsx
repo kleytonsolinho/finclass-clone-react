@@ -7,7 +7,14 @@ export default function Subscribebar() {
     <Container>
       <div className="content">
         <p>R$ 39,90/mês no plano anual</p>
-        <Button text="Assine agora" />
+        <Button
+          width={20}
+          primary
+          color="#00e7f9"
+          type="submit"
+        >
+          Assine agora
+        </Button>
       </div>
     </Container>
   );
