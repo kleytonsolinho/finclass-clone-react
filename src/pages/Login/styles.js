@@ -67,7 +67,6 @@ export const Container = styled.section`
 
     input {
       width: 100%;
-      max-width: 368px;
       height: 48px;
       background: rgba(32,34,39,0.9);
       border-radius: 6px;
