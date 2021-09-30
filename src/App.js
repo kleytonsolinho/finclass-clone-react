@@ -2,15 +2,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyles } from './styles/global';
 import Routes from './routes';
 
-import NavbarScrollProvider from './context/NavbarScroll';
+import { NavbarScrollContext } from './context/NavbarScroll';
 
 export function App() {
   return (
-    <NavbarScrollProvider>
+    <NavbarScrollContext>
       <Router>
         <GlobalStyles />
         <Routes />
       </Router>
-    </NavbarScrollProvider>
+    </NavbarScrollContext>
   );
 }

@@ -2,7 +2,7 @@ import { createContext, useState, useContext } from 'react';
 
 const NavbarScroll = createContext();
 
-export default function NavbarScrollProvider({ children }) {
+export function NavbarScrollContext({ children }) {
   const [isVisible, setisVisible] = useState(false);
 
   return (
