@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import imgBg from '../../assets/images/site/bg-desktop.webp';
+import imgBg from '../../../assets/images/site/bg-desktop.webp';
 
 export const Container = styled.main`
   max-width: 1280px;
