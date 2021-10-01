@@ -7,7 +7,7 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-        "plugin:cypress/recommended"
+        "cypress/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
