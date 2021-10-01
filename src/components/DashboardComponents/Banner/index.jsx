@@ -92,6 +92,7 @@ export default function Banner() {
       <Controls>
         {dataBanner.map((item) => (
           <Select
+            id={`control-${item.id}`}
             onClick={() => setSelectBanner(item.id)}
             tooggle={selectBanner === item.id ? '#00e7f9' : '#ffffff'}
           >

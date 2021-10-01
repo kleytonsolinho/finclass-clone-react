@@ -15,6 +15,10 @@ export default function Login() {
 
     history.push('/dashboard');
   }
+
+  function handleRegister() {
+    history.push('/register');
+  }
   return (
     <Container>
       <div>
@@ -56,6 +60,7 @@ export default function Login() {
           width={100}
           color="#00e7f9"
           type="submit"
+          onClick={() => handleRegister()}
         >
           Criar Conta
         </Button>
