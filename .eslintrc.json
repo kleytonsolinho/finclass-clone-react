@@ -2,12 +2,13 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "jest": true
+        "jest": true,
+        "cypress/globals": true
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
-        "cypress/recommended"
+        "plugin:cypress/recommended",
+        "airbnb"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -18,7 +19,8 @@
     },
     "plugins": [
         "react",
-        "import"
+        "import",
+        "cypress"
     ],
     "rules": {
         "react/prop-types": "off",
