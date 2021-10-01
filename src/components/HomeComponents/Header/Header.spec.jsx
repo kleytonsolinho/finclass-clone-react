@@ -1,12 +1,12 @@
 import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
+import { render, screen } from '@testing-library/react';
 
 import Header from '.';
 
 jest.mock('../../../context/NavbarScroll', () => ({
   useNavbarScoll() {
-    return [false, false];
+    return [false, null];
   },
 }));
 
@@ -33,6 +33,16 @@ describe('Header component', () => {
     expect(screen.getByText('Assine agora')).toBeInTheDocument();
   });
 
+  it('redirects to register on click menu', () => {
+    render(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>,
+    );
+
+    expect(screen.getByText('Assine agora')).toHaveAttribute('href', '/register');
+  });
+
   it('renders correctly menu login', () => {
     render(
       <BrowserRouter>
@@ -41,5 +51,15 @@ describe('Header component', () => {
     );
 
     expect(screen.getByText('Já sou assinante')).toBeInTheDocument();
+  });
+
+  it('redirects to login on click menu', () => {
+    render(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>,
+    );
+
+    expect(screen.getByText('Já sou assinante')).toHaveAttribute('href', '/login');
   });
 });

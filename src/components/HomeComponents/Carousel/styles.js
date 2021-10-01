@@ -58,7 +58,7 @@ export const Container = styled.section`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 9;
 
   padding: 0 6rem;
   opacity: 0;

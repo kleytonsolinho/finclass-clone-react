@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import Button from '../../Global/Buttondefault';
 
@@ -8,7 +9,12 @@ import arrowImg from '../../../assets/images/site/icon-arrow-circle-down.svg';
 
 import { Container } from './styles';
 
-function Banner() {
+export default function Banner() {
+  const history = useHistory();
+
+  function handleSubmit() {
+    history.push('/register');
+  }
   return (
     <Container>
       <section className="content">
@@ -31,6 +37,7 @@ function Banner() {
           primary
           color="#00e7f9"
           type="submit"
+          onClick={() => handleSubmit()}
         >
           Assine agora
         </Button>
@@ -40,7 +47,7 @@ function Banner() {
         </span>
         <div>
           <p>Descubra como </p>
-          <img src={arrowImg} alt="" />
+          <img src={arrowImg} alt="icon" />
         </div>
       </section>
 
@@ -50,5 +57,3 @@ function Banner() {
     </Container>
   );
 }
-
-export default Banner;

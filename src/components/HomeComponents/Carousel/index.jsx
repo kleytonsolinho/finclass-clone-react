@@ -25,7 +25,7 @@ export default function Carousel() {
       <div className="header">
         <img src={learningIcon} alt="" />
         <h1>
-          <span>Conheça</span>
+          <span>Conheça </span>
           os seus mentores
         </h1>
         <p>

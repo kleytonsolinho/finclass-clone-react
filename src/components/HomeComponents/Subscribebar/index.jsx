@@ -1,8 +1,14 @@
+import { useHistory } from 'react-router-dom';
 import { Container } from './styles';
 
 import Button from '../../Global/Buttondefault';
 
 export default function Subscribebar() {
+  const history = useHistory();
+
+  function handleSubmit() {
+    history.push('/register');
+  }
   return (
     <Container>
       <div className="content">
@@ -12,6 +18,7 @@ export default function Subscribebar() {
           primary
           color="#00e7f9"
           type="submit"
+          onClick={() => handleSubmit()}
         >
           Assine agora
         </Button>
