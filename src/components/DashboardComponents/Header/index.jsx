@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch, FaCaretDown } from 'react-icons/fa';
 
-import { useNavbarScoll } from '../../../context/NavbarScroll';
+import { useNavbarScroll } from '../../../hooks/useNavbarScroll';
 
 import imgLogo from '../../../assets/images/site/logo-finclass.svg';
 import imgAvatar from '../../../assets/images/site/avataaars.svg';
@@ -10,7 +10,7 @@ import imgAvatar from '../../../assets/images/site/avataaars.svg';
 import { NavbarMenu } from './styles';
 
 export default function Header() {
-  const { isVisible, setisVisible } = useNavbarScoll();
+  const { isVisible, setisVisible } = useNavbarScroll();
 
   function handleScroll() {
     if (window.scrollY >= 150) {

@@ -4,8 +4,8 @@ import { render, screen } from '@testing-library/react';
 
 import Header from '.';
 
-jest.mock('../../../context/NavbarScroll', () => ({
-  useNavbarScoll() {
+jest.mock('../../../hooks/useNavbarScroll', () => ({
+  useNavbarScroll() {
     return [false, null];
   },
 }));

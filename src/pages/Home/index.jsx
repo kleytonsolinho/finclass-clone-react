@@ -1,4 +1,4 @@
-import { useNavbarScoll } from '../../context/NavbarScroll';
+import { useNavbarScroll } from '../../hooks/useNavbarScroll';
 
 import Header from '../../components/HomeComponents/Header';
 import Banner from '../../components/HomeComponents/Banner';
@@ -9,7 +9,7 @@ import Categorys from '../../components/HomeComponents/Categorys';
 import Video from '../../components/HomeComponents/Video';
 
 export default function Home() {
-  const { isVisible } = useNavbarScoll();
+  const { isVisible } = useNavbarScroll();
 
   return (
     <>

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import { useNavbarScoll } from '../../../context/NavbarScroll';
+import { useNavbarScroll } from '../../../hooks/useNavbarScroll';
 
 import logoImg from '../../../assets/images/site/logo-finclass.svg';
 import buttonOne from '../../../assets/images/site/trial-icon.svg';
@@ -10,7 +10,7 @@ import buttonTwo from '../../../assets/images/site/icon-user.svg';
 import { NavbarMenu } from './styles';
 
 export default function Header() {
-  const { isVisible, setisVisible } = useNavbarScoll();
+  const { isVisible, setisVisible } = useNavbarScroll();
 
   function handleScroll() {
     if (window.scrollY >= 150) {
