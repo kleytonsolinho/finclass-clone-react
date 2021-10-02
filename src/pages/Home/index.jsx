@@ -8,6 +8,7 @@ import Carousel from '../../components/HomeComponents/Carousel';
 import Categorys from '../../components/HomeComponents/Categorys';
 import Video from '../../components/HomeComponents/Video';
 import App from '../../components/HomeComponents/App';
+import AppFooter from '../../components/HomeComponents/AppFooter';
 import Footer from '../../components/HomeComponents/Footer';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Categorys />
         <Video />
         <App />
+        <AppFooter />
       </main>
       <Footer />
       {isVisible && <Subscribebar />}
