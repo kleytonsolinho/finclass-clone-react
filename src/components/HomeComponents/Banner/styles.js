@@ -2,19 +2,27 @@ import styled from 'styled-components';
 
 import imgBg from '../../../assets/images/site/bg-desktop.webp';
 
-export const Container = styled.main`
+export const BannerHero = styled.section`
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
   height: calc(100vh - 100px);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   min-height: 628px;
   background-image: url(${imgBg});
   background-repeat: no-repeat;
+`;
+
+export const Container = styled.div`
+  max-width: 1280px;
+  height: calc(100vh - 100px);
+
+  min-height: 628px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 .content {
   width: 50%;
