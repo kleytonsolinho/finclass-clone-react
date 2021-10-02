@@ -1,56 +1,56 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "jest": true,
-        "cypress/globals": true
-    },
-    "extends": [
-        "plugin:react/recommended",
-        "plugin:cypress/recommended",
-        "airbnb"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            ".jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "import",
-        "cypress"
-    ],
-    "rules": {
-        "react/prop-types": "off",
-        "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [
-            "error",
-            {
-                "extensions": [
-                    ".js",
-                    ".jsx"
-                ]
-            }
-        ],
-        "global-require": "off",
-        "import/prefer-default-export": "off",
-        "no-unused-expressions": [
-            "error",
-            {
-                "allowTaggedTemplates": true
-            }
-        ],
-        "jsx-a11y/label-has-associated-control": ["error", {
-          "required": {
-            "some": ["nesting", "id"]
+  "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true,
+      "cypress/globals": true
+  },
+  "extends": [
+      "plugin:react/recommended",
+      "plugin:cypress/recommended",
+      "airbnb"
+  ],
+  "parserOptions": {
+      "ecmaFeatures": {
+          ".jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "import",
+      "cypress"
+  ],
+  "rules": {
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-filename-extension": [
+          "error",
+          {
+              "extensions": [
+                  ".js",
+                  ".jsx"
+              ]
           }
-        }],
-        "jsx-a11y/label-has-for": ["error", {
-          "required": {
-            "some": ["nesting", "id"]
+      ],
+      "global-require": "off",
+      "import/prefer-default-export": "off",
+      "no-unused-expressions": [
+          "error",
+          {
+              "allowTaggedTemplates": true
           }
-        }],
-    }
+      ],
+      "jsx-a11y/label-has-associated-control": ["error", {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }],
+      "jsx-a11y/label-has-for": ["error", {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }],
+  }
 }
