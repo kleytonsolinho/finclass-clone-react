@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import iconTestmonial from '../../../assets/images/site/icon-tesmonial.svg';
 import arrowImg from '../../../assets/images/site/icon-arrow-circle-down.svg';
@@ -30,10 +30,6 @@ export default function Testimonials() {
 
     setSelectCard(selectCard + n);
   }
-
-  useEffect(() => {
-    console.log(selectCard);
-  }, [selectCard]);
 
   return (
     <Container>
