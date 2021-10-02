@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavbarMenu = styled.header`
-  max-width: 1280px;
+  width: 100%;
   height: 100px;
   padding: 0 2rem;
 
@@ -15,6 +15,7 @@ export const NavbarMenu = styled.header`
 
 .navbarContainer {
   width: 100%;
+  max-width: 1280px;
   height: 100%;
 
   display: flex;
