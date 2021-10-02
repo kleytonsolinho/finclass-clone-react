@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import imgBg from '../../../assets/images/site/bg-desktop.webp';
 
 export const Container = styled.main`
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
   height: calc(100vh - 100px);

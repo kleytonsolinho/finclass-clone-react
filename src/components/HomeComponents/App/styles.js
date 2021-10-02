@@ -24,10 +24,11 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 `;
 
 export const Left = styled.div`
+  max-width: 650px;
   img {
     width: 650px;
     height: 487px;
@@ -37,6 +38,7 @@ export const Left = styled.div`
 `;
 
 export const Right = styled.div`
+  max-width: 560px;
   ul {
     list-style: none;
 
