@@ -25,7 +25,7 @@ import {
 export default function Categorys() {
   return (
     <Container>
-      <img src={classesIcon} alt="" />
+      <img src={classesIcon} alt="" className="mg-top" />
       <Content>
         <Left>
           <h1>

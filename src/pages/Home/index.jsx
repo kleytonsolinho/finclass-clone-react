@@ -7,6 +7,7 @@ import Subscribebar from '../../components/HomeComponents/Subscribebar';
 import Carousel from '../../components/HomeComponents/Carousel';
 import Categorys from '../../components/HomeComponents/Categorys';
 import Video from '../../components/HomeComponents/Video';
+import App from '../../components/HomeComponents/App';
 
 export default function Home() {
   const { isVisible } = useNavbarScroll();
@@ -19,6 +20,7 @@ export default function Home() {
       <Carousel />
       <Categorys />
       <Video />
+      <App />
     </>
   );
 }

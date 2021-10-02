@@ -5,7 +5,11 @@ export const Container = styled.section`
   height: auto;
   padding: 0 2rem;
   width: 100%;
-  margin: 4rem 0;
+  margin: 0 auto;
+
+  .mg-top {
+    margin-top: 3rem;
+  }
 `;
 
 export const Content = styled.div`
