@@ -5,7 +5,7 @@ export const Container = styled.section`
   height: auto;
   padding: 0 2rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 4rem 0;
 `;
 
 export const Content = styled.div`
@@ -40,7 +40,7 @@ export const Left = styled.div`
     }
 
     p {
-      margin: 1rem 0;
+      margin: 1.5rem 0 2rem 0;
     }
   }
 `;

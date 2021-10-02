@@ -37,8 +37,9 @@ export default function Categorys() {
             <li>
               <img src={finClasses} alt="" />
               <p>
-                Documentários originais que visam um entretenimento relacionado
-                ao mundo do dinheiro, trazendo grandes experts mundiais.
+                Aulas com alto nível de produção sobre diversos assuntos
+                relacionados a investimentos e finanças, onde você é ensinado
+                por grandes especialistas do mercado.
               </p>
               <img src={lineIcon} alt="" />
             </li>
