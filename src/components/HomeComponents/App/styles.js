@@ -59,9 +59,10 @@ export const Right = styled.div`
       }
 
       p {
-        margin: 0.5rem 0;
+        margin: 1.3rem 0 0.6rem 0;
         font-weight: 300;
         opacity: 0.7;
+        max-width: 400px;
       }
     }
   }

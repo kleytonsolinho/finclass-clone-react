@@ -15,12 +15,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Banner />
+      <main>
+        <Banner />
+        <Carousel />
+        <Categorys />
+        <Video />
+        <App />
+      </main>
       {isVisible && <Subscribebar />}
-      <Carousel />
-      <Categorys />
-      <Video />
-      <App />
     </>
   );
 }
