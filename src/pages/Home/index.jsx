@@ -9,6 +9,7 @@ import Categorys from '../../components/HomeComponents/Categorys';
 import Video from '../../components/HomeComponents/Video';
 import App from '../../components/HomeComponents/App';
 import AppFooter from '../../components/HomeComponents/AppFooter';
+import Testimonials from '../../components/HomeComponents/Testimonials';
 import Faq from '../../components/HomeComponents/Faq';
 import Footer from '../../components/HomeComponents/Footer';
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Categorys />
         <Video />
         <App />
+        <Testimonials />
         <Faq />
         <AppFooter />
       </main>
