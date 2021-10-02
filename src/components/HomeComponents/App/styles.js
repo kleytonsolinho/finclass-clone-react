@@ -29,8 +29,10 @@ export const Content = styled.div`
 
 export const Left = styled.div`
   img {
-    width: 100%;
+    width: 650px;
+    height: 487px;
     margin-top: 80px;
+    object-fit: contain;
   }
 `;
 

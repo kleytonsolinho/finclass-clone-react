@@ -18,7 +18,7 @@ import {
 export default function App() {
   return (
     <Container>
-      <img src={appIcon} alt="App de finanças - Finclass" className="mg-top" />
+      <img src={appIcon} alt="" className="mg-top" />
       <h1>
         <strong>Conheça </strong>
         nosso app
@@ -30,7 +30,7 @@ export default function App() {
             <br />
             mundo, onde e quando você quiser.
           </p>
-          <img src={imgApp} alt="App" />
+          <img src={imgApp} alt="App de finanças - Finclass" />
         </Left>
         <Right>
           <ul>
