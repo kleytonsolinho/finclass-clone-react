@@ -81,8 +81,8 @@ export const Right = styled.div`
   .app-store {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 1.5rem 3rem;
+    justify-content: space-around;
+    margin: 2rem 0;
 
     a {
       display: block;
