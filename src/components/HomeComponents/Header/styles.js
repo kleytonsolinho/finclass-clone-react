@@ -17,6 +17,7 @@ export const NavbarMenu = styled.header`
   width: 100%;
   max-width: 1280px;
   height: 100%;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
