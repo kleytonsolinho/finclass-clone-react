@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 import imgBg from '../../../assets/images/site/bg-desktop.webp';
 
@@ -31,56 +32,61 @@ export const Container = styled.div`
   width: 50%;
   margin-top: 100px;
 
-  div strong:first-of-type {
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 2rem;
-    color: var(--cc-btn-primary-hover-bg);
-    margin-right: 10px;
-    font-weight: normal;
-  }
+    div strong:first-of-type {
+      text-transform: uppercase;
+      font-size: 1rem;
+      line-height: 2rem;
+      color: var(--cc-btn-primary-hover-bg);
+      margin-right: 10px;
+      font-weight: normal;
+    }
 
-  h1 {
-    font-size: 3rem;
-  }
+    h1 {
+      font-size: 3rem;
+    }
 
-  p {
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 25px 0;
-  }
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 25px 0;
+    }
 
-  span {
-    color: #86888d;
-    font-weight: bold;
+    span {
+      color: #86888d;
+      font-weight: bold;
 
-    strong {
-      color: #ffffff;
+      strong {
+        color: #ffffff;
+      }
+    }
+
+    div:nth-of-type(2) {
+      margin-top: 3rem;
+
+      display: flex;
+      align-items: center;
+
+      line-height: 32px;
+      height: 32px;
+
+      p {
+        margin-right: 1rem;
+      }
     }
   }
 
-  div:nth-of-type(2) {
-    margin-top: 3rem;
+  .img {
+    width: 50%;
+    margin: 0 auto;
 
     display: flex;
     align-items: center;
-
-    line-height: 32px;
-    height: 32px;
-
-    p {
-      margin-right: 1rem;
-    }
+    justify-content: center;
   }
-}
+`;
 
-.img {
-  width: 50%;
-  margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+export const NavLink = styled(Link)`
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 `;

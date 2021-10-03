@@ -7,7 +7,7 @@ import appFinclass from '../../../assets/images/site/app-finclass.webp';
 import lightningIcon from '../../../assets/images/site/thunder-lightning-circle.svg';
 import arrowImg from '../../../assets/images/site/icon-arrow-circle-down.svg';
 
-import { BannerHero, Container } from './styles';
+import { BannerHero, Container, NavLink } from './styles';
 
 export default function Banner() {
   const history = useHistory();
@@ -48,7 +48,13 @@ export default function Banner() {
           </span>
           <div>
             <p>Descubra como </p>
-            <img src={arrowImg} alt="icon" />
+            <NavLink
+              to="slideGalery"
+              smooth
+              duration={1000}
+            >
+              <img src={arrowImg} alt="icon" />
+            </NavLink>
           </div>
         </section>
 
