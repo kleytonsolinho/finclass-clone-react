@@ -77,8 +77,14 @@ export const Right = styled.div`
       flex-direction: column;
       text-align: center;
 
+      transition: 0.2s all;
+
       img {
         margin-bottom: 10px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
