@@ -6,7 +6,7 @@ import imgApp from '../../../assets/images/site/assine-finclass.webp';
 import ctaImg from '../../../assets/images/site/cta-icon.svg';
 
 import {
-  Group, BgBar, Container, Content, Left, Right,
+  Group, BgBarGradient, BgBar, Container, Content, Left, Right,
 } from './styles';
 
 export default function AppFooter() {
@@ -17,6 +17,10 @@ export default function AppFooter() {
   }
   return (
     <Group>
+      <BgBarGradient>
+        <div className="top" />
+        <div className="bottom" />
+      </BgBarGradient>
       <BgBar />
       <Container>
         <Content>

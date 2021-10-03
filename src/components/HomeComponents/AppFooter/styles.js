@@ -4,9 +4,27 @@ export const Group = styled.section`
   position: relative;
 `;
 
+export const BgBarGradient = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: space-between;
+
+  .top {
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to top, rgba(32, 34, 39, 0.5), rgba(0, 0, 0, 1));
+  }
+
+  .bottom {
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to bottom, rgba(32, 34, 39, 0.5), rgba(0, 0, 0, 1));
+  }
+`;
+
 export const BgBar = styled.div`
   width: 100%;
-  height: 375px;
+  height: 500px;
   position: absolute;
   left: 0;
   top: 50%;
@@ -46,9 +64,8 @@ export const Left = styled.div`
   max-width: 650px;
 
   img {
-    width: 650px;
-    height: 487px;
-    margin-top: 80px;
+    width: 615px;
+    height: 600px;
     object-fit: contain;
   }
 `;
@@ -59,6 +76,7 @@ export const Right = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  margin-left: 10rem;
 
   img {
     width: 32px;
