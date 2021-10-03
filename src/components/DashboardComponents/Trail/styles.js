@@ -31,8 +31,11 @@ export const Content = styled.div`
     padding: 2rem 1.5rem;
     overflow: hidden;
 
+    transition: 0.2s all;
+
     &:hover {
       cursor: pointer;
+      transform: scale(1.05);
 
       header .btn {
         opacity: 1;
