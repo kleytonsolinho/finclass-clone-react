@@ -1,5 +1,19 @@
 import styled from 'styled-components';
 
+export const Group = styled.section`
+  position: relative;
+`;
+
+export const BgBar = styled.div`
+  width: 100%;
+  height: 375px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(32, 34, 39, 0.5);
+`;
+
 export const Container = styled.div`
   max-width: 1280px;
   height: auto;
@@ -7,16 +21,6 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   position: relative;
-
-  .bg-gray {
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(32, 34, 39, 0.5);
-  }
 
   .mg-top {
     margin-top: 3rem;
