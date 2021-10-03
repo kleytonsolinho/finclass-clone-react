@@ -1,16 +1,24 @@
+import { useState } from 'react';
+
+import Beginner from './Beginner';
+import Intermediary from './Intermediary';
+import Advanced from './Advanced';
+
 import iconSchool from '../../../assets/images/site/icon-school.svg';
 import iconUser from '../../../assets/images/site/user-icon-prof.svg';
 import iconButton from '../../../assets/images/site/begg.svg';
 
-import grupoIcon0 from '../../../assets/images/site/Group_0.svg';
-import h1Line from '../../../assets/images/site/lhl.svg';
-import circleIcon from '../../../assets/images/site/circle.svg';
-
 import {
-  Container, Header, User, SelectTrail, TrailContent,
+  Container, Header, User, SelectTrail, LineBegginer, LineAdvanced,
 } from './styles';
 
 export default function Timeline() {
+  const [trailSelect, setTrailSelect] = useState(1);
+
+  function tooggleTrail(n) {
+    setTrailSelect(n);
+  }
+
   return (
     <Container>
       <Header>
@@ -29,82 +37,44 @@ export default function Timeline() {
       </User>
       <SelectTrail>
         <div className="btns">
-          <button type="button" className="active-btn">
+          <button
+            type="button"
+            onClick={() => tooggleTrail(1)}
+            className={trailSelect === 1 ? 'active-btn' : null}
+          >
             <img src={iconButton} alt="" />
             Iniciante
           </button>
-          <button type="button">
+          <button
+            type="button"
+            onClick={() => tooggleTrail(2)}
+            className={trailSelect === 2 ? 'active-btn' : null}
+          >
             <img src={iconButton} alt="" />
             Intermediário
           </button>
-          <button type="button">
+          <button
+            type="button"
+            onClick={() => tooggleTrail(3)}
+            className={trailSelect === 3 ? 'active-btn' : null}
+          >
             <img src={iconButton} alt="" />
             Avançado
           </button>
         </div>
-        <div className="begginer active-b" />
-        <div className="advanced" />
+        <LineBegginer
+          trailSelect={trailSelect}
+          className={
+            trailSelect === 1 ? 'active-b' : null
+          }
+        />
+        <LineAdvanced
+          className={trailSelect === 3 ? 'active-a' : null}
+        />
       </SelectTrail>
-      <TrailContent>
-        <ul>
-          <li className="left">
-            <img src={grupoIcon0} alt="" className="icon" />
-            <div className="description">
-              <h1>Aprenda do zero a investir</h1>
-              <p>
-                Tenha conteúdos introdutórios para
-                <br />
-                você começar a investir do jeito certo.
-              </p>
-            </div>
-            <img src={h1Line} alt="" />
-            <img src={circleIcon} alt="" />
-          </li>
-          <li className="right" />
-          <li className="left" />
-          <li className="right">
-            <img src={circleIcon} alt="" />
-            <img src={h1Line} alt="" />
-            <img src={grupoIcon0} alt="" className="icon" />
-            <div className="description">
-              <h1>Aprenda do zero a investir</h1>
-              <p>
-                Tenha conteúdos introdutórios para
-                <br />
-                você começar a investir do jeito certo.
-              </p>
-            </div>
-          </li>
-          <li className="left">
-            <img src={grupoIcon0} alt="" className="icon" />
-            <div className="description">
-              <h1>Aprenda do zero a investir</h1>
-              <p>
-                Tenha conteúdos introdutórios para
-                <br />
-                você começar a investir do jeito certo.
-              </p>
-            </div>
-            <img src={h1Line} alt="" />
-            <img src={circleIcon} alt="" />
-          </li>
-          <li className="right" />
-          <li className="left" />
-          <li className="right">
-            <img src={circleIcon} alt="" />
-            <img src={h1Line} alt="" />
-            <img src={grupoIcon0} alt="" className="icon" />
-            <div className="description">
-              <h1>Aprenda do zero a investir</h1>
-              <p>
-                Tenha conteúdos introdutórios para
-                <br />
-                você começar a investir do jeito certo.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </TrailContent>
+      {trailSelect === 1 && <Beginner />}
+      {trailSelect === 2 && <Intermediary />}
+      {trailSelect === 3 && <Advanced />}
     </Container>
   );
 }
