@@ -23,6 +23,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 1280px) {
+    padding: 0 2rem;
+  }
+
 .content {
   width: 50%;
   margin-top: 100px;

@@ -7,8 +7,6 @@ export const Container = styled.footer`
   margin: 0 auto;
   margin-top: 5rem;
 
-  background: rgba(32, 34, 39, 0.5);
-
   .nav-menu-footer {
     width: 100%;
     max-width: 1280px;
@@ -21,7 +19,7 @@ export const Container = styled.footer`
 
     section {
       .separator {
-        margin: 2rem 0 1rem 0;
+        margin: 5rem 0 1rem 0;
       }
 
       p {
@@ -31,7 +29,6 @@ export const Container = styled.footer`
 
       ul {
         list-style: none;
-        font-weight: bold;
       }
 
       li {

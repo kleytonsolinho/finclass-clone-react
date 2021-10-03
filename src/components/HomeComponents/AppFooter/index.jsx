@@ -17,6 +17,7 @@ export default function AppFooter() {
   }
   return (
     <Container>
+      <div className="bg-gray" />
       <Content>
         <Left>
           <img src={imgApp} alt="Assine agora" />
@@ -24,7 +25,7 @@ export default function AppFooter() {
         <Right>
           <img src={ctaImg} alt="" />
           <h1>
-            <strong>Aprenda Finanças</strong>
+            <strong>Aprenda finanças</strong>
             <br />
             de verdade
           </h1>

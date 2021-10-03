@@ -31,7 +31,7 @@ export default function Footer() {
         </section>
         <section>
           <ul>
-            <li>Transparência</li>
+            <li><strong>Transparência</strong></li>
             <a href="/"><li>Termos de uso</li></a>
             <a href="/"><li>Política de Privacidade</li></a>
             <a href="/"><li>Proteja sua privacidade</li></a>
@@ -39,20 +39,20 @@ export default function Footer() {
         </section>
         <section>
           <ul>
-            <li>Fale conosco</li>
+            <li><strong>Fale conosco</strong></li>
             <a href="/"><li>Contato</li></a>
           </ul>
         </section>
         <section>
           <ul>
-            <li>Redes Socias</li>
+            <li><strong>Redes Socias</strong></li>
             <a href="/"><li>Instagram</li></a>
             <a href="/"><li>Youtube</li></a>
           </ul>
         </section>
         <section>
           <ul>
-            <li>Baixe nosso app</li>
+            <li><strong>Baixe nosso app</strong></li>
             <div className="app-store">
               <a href="/">
                 <img src={appleStore} alt="Apple Store" />
