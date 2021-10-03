@@ -62,15 +62,8 @@ export default function Timeline() {
             Avançado
           </button>
         </div>
-        <LineBegginer
-          trailSelect={trailSelect}
-          className={
-            trailSelect === 1 ? 'active-b' : null
-          }
-        />
-        <LineAdvanced
-          className={trailSelect === 3 ? 'active-a' : null}
-        />
+        <LineBegginer trailSelect={trailSelect} />
+        <LineAdvanced trailSelect={trailSelect} />
       </SelectTrail>
       {trailSelect === 1 && <Beginner />}
       {trailSelect === 2 && <Intermediary />}

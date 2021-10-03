@@ -10,20 +10,6 @@ export const Container = styled.div`
   .active-btn {
     border: 1px solid #00e7f9 !important;
   }
-
-  .active-b {
-    border-right: 1px solid #00e7f922;
-    border-top: 1px solid #00e7f9;
-    border-left: 1px solid #00e7f9;
-    border-bottom: 1px solid #00e7f9;
-  }
-
-  .active-a {
-    border-left: 1px solid #00e7f922;
-    border-top: 1px solid #00e7f9;
-    border-right: 1px solid #00e7f9;
-    border-bottom: 1px solid #00e7f9;
-  }
 `;
 
 export const Header = styled.div`
@@ -103,6 +89,9 @@ export const LineBegginer = styled.div`
   position: relative;
   background: transparent;
   border-right: 1px solid ${(props) => (props.trailSelect === 2 ? '#00e7f9' : '#00e7f922')};
+  border-top: 1px solid ${(props) => (props.trailSelect === 1 ? '#00e7f9' : '#00e7f922')};
+  border-left: 1px solid ${(props) => (props.trailSelect === 1 ? '#00e7f9' : '#00e7f922')};
+  border-bottom: 1px solid ${(props) => (props.trailSelect === 1 ? '#00e7f9' : '#00e7f922')};
 `;
 
 export const LineAdvanced = styled.div`
@@ -110,4 +99,7 @@ export const LineAdvanced = styled.div`
   height: 250px;
   position: relative;
   background: transparent;
+  border-right: 1px solid ${(props) => (props.trailSelect === 3 ? '#00e7f9' : '#00e7f922')};
+  border-top: 1px solid ${(props) => (props.trailSelect === 3 ? '#00e7f9' : '#00e7f922')};
+  border-bottom: 1px solid ${(props) => (props.trailSelect === 3 ? '#00e7f9' : '#00e7f922')};
 `;
