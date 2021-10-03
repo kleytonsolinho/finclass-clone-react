@@ -6,18 +6,21 @@ export const Group = styled.section`
 
 export const BgBarGradient = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
-  align-items: space-between;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 
   .top {
     width: 100%;
-    height: 10px;
+    height: 100px;
     background-image: linear-gradient(to top, rgba(32, 34, 39, 0.5), rgba(0, 0, 0, 1));
   }
 
   .bottom {
     width: 100%;
-    height: 10px;
+    height: 100px;
     background-image: linear-gradient(to bottom, rgba(32, 34, 39, 0.5), rgba(0, 0, 0, 1));
   }
 `;
@@ -30,6 +33,8 @@ export const BgBar = styled.div`
   top: 50%;
   transform: translateY(-50%);
   background: rgba(32, 34, 39, 0.5);
+
+
 `;
 
 export const Container = styled.div`

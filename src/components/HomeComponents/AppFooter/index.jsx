@@ -17,11 +17,12 @@ export default function AppFooter() {
   }
   return (
     <Group>
-      <BgBarGradient>
-        <div className="top" />
-        <div className="bottom" />
-      </BgBarGradient>
-      <BgBar />
+      <BgBar>
+        <BgBarGradient>
+          <div className="top" />
+          <div className="bottom" />
+        </BgBarGradient>
+      </BgBar>
       <Container>
         <Content>
           <Left>
