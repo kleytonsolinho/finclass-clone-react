@@ -17,18 +17,20 @@ import {
 export default function Testimonials() {
   const [selectCard, setSelectCard] = useState(1);
 
-  function handleClick(n) {
+  function handleUpClick() {
+    if (selectCard <= 1) {
+      setSelectCard(3);
+      return;
+    }
+    setSelectCard(selectCard - 1);
+  }
+
+  function handleDownClick() {
     if (selectCard >= 3) {
       setSelectCard(1);
       return;
     }
-
-    if (selectCard <= 0) {
-      setSelectCard(3);
-      return;
-    }
-
-    setSelectCard(selectCard + n);
+    setSelectCard(selectCard + 1);
   }
 
   return (
@@ -71,10 +73,10 @@ export default function Testimonials() {
           </div>
         </Left>
         <Controls>
-          <button type="button" className="up" onClick={() => handleClick(1)}>
+          <button type="button" className="up" onClick={() => handleUpClick()}>
             <img src={arrowImg} alt="" />
           </button>
-          <button type="button" onClick={() => handleClick(-1)}>
+          <button type="button" onClick={() => handleDownClick()}>
             <img src={arrowImg} alt="" />
           </button>
         </Controls>
