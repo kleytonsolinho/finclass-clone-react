@@ -13,7 +13,12 @@ export default function Faq() {
   const [buttonSelect, setButtonSelect] = useState(1);
   const [faqSelect, setFaqSelect] = useState(0);
 
-  function toogleFaq(n) {
+  function tooggleButton(n) {
+    setButtonSelect(n);
+    setFaqSelect(0);
+  }
+
+  function tooggleFaq(n) {
     if (faqSelect === n) {
       setFaqSelect(0);
       return;
@@ -31,7 +36,7 @@ export default function Faq() {
       <nav>
         <Button
           type="button"
-          onClick={() => setButtonSelect(1)}
+          onClick={() => tooggleButton(1)}
           className={buttonSelect === 1 ? 'active' : null}
         >
           <img src={geralIcon} alt="geral" />
@@ -40,7 +45,7 @@ export default function Faq() {
         <Button
           type="button"
           className={buttonSelect === 2 ? 'active' : null}
-          onClick={() => setButtonSelect(2)}
+          onClick={() => tooggleButton(2)}
         >
           <img src={geralIcon} alt="aplicativos" />
           Aplicativo
@@ -48,7 +53,7 @@ export default function Faq() {
         <Button
           type="button"
           className={buttonSelect === 3 ? 'active' : null}
-          onClick={() => setButtonSelect(3)}
+          onClick={() => tooggleButton(3)}
         >
           <img src={geralIcon} alt="planos & assinaturas" />
           Planos & Assinaturas
@@ -59,7 +64,7 @@ export default function Faq() {
       >
         {geral.map((item) => (
           <Question
-            onClick={() => toogleFaq(item.id)}
+            onClick={() => tooggleFaq(item.id)}
             className={faqSelect === item.id ? 'open' : null}
           >
             <div className="question">
@@ -86,7 +91,7 @@ export default function Faq() {
       >
         {aplicativo.map((item) => (
           <Question
-            onClick={() => toogleFaq(item.id)}
+            onClick={() => tooggleFaq(item.id)}
             className={faqSelect === item.id ? 'open' : null}
           >
             <div className="question">
@@ -113,7 +118,7 @@ export default function Faq() {
       >
         {assinatura.map((item) => (
           <Question
-            onClick={() => toogleFaq(item.id)}
+            onClick={() => tooggleFaq(item.id)}
             className={faqSelect === item.id ? 'open' : null}
           >
             <div className="question">
