@@ -3,7 +3,7 @@ import { Container } from './styles';
 
 import Button from '../../Global/Form/Button';
 
-export default function SubscribeBar() {
+export default function Subscribebar() {
   const history = useHistory();
 
   function handleToRegister() {

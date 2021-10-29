@@ -13,7 +13,7 @@ import Faq from '../../components/Home/Faq';
 import AppFooter from '../../components/Home/AppFooter';
 
 import Footer from '../../components/Home/Footer';
-import SubscribeBar from '../../components/Home/SubscribeBar';
+import Subscribebar from '../../components/Home/Subscribebar';
 
 export default function Home() {
   const { isVisible } = useNavbarScroll();
@@ -33,7 +33,7 @@ export default function Home() {
         <AppFooter />
       </main>
       <Footer />
-      {isVisible && <SubscribeBar />}
+      {isVisible && <Subscribebar />}
     </>
   );
 }
