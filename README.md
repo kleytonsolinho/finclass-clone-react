@@ -10,15 +10,13 @@
   </a>
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/kleytonsolinho/finclass-clone-react">
-  <a href="https://github.com/lukemorales/react-rocketshoes/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/kleytonsolinho/netshoes-clone.svg">
+  <a href="https://github.com/kleytonsolinh/finclass-clone-react/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/kleytonsolinho/finclass-clone-react">
   </a>
 
   <a href="https://github.com/kleytonsolinho/finclass-clone-react/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/kleytonsolinho/netshoes-clone.svg">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/kleytonsolinho/finclass-clone-react">
   </a>
-
-  <img alt="GitHub" src="https://img.shields.io/github/license/kleytonsolinho/netshoes-clone.svg">
 </p>
 
 <p align="center">
@@ -40,6 +38,7 @@ Esta aplicação foi desenolvida com as tecnologias abaixo:
 
 - [ReactJS](https://reactjs.org/)
 - [React Router v4](https://github.com/ReactTraining/react-router)
+- [React Scroll](https://www.npmjs.com/package/react-scroll)
 - [History](https://www.npmjs.com/package/history)
 - [styled-components](https://www.styled-components.com/)
 - [React-Icons](https://react-icons.netlify.com/)
@@ -69,3 +68,4 @@ $ yarn start
 [vc]: https://code.visualstudio.com/
 [vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
 [vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[vcprettier]: https://prettier.io/
