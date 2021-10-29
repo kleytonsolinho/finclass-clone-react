@@ -48,7 +48,7 @@ Finclass é um plataforma como o "Netflix" de investimentos.
 
 ## :rocket: Tecnologias
 
-Esta aplicação foi desenolvida com as tecnologias abaixo:
+Esta aplicação foi desenvolvida com as tecnologias abaixo:
 
 - [ReactJS](https://reactjs.org/)
 - [React Router v4](https://github.com/ReactTraining/react-router)
