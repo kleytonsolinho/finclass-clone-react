@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=".github/images/logo-finclass.svg" alt="logo-finclass" />
+  <img src=".github/images/logo-finclass.svg" alt="logo-finclass" style="margin-top: 20px;" />
 </div>
 
 <div align="center">
@@ -45,8 +45,6 @@
 Aplicação utilizando a Stack do React JS clone identico a plataforma de investimentos Finclass.
 
 Finclass é um plataforma como o "Netflix" de investimentos.
-
-## 🔝 Tecnologias
 
 ## :rocket: Tecnologias
 
