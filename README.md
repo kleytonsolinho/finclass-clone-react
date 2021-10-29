@@ -1,4 +1,10 @@
-#### NetShoes Clone App com ReactJS e Styled Components.
+<div align="center">
+  <img src=".github/images/logo-finclass.svg" alt="logo-finclass" />
+</div>
+
+<div align="center">
+  <h3>NetShoes Clone App com ReactJS e Styled Components.</h3>
+</div>
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/kleytonsolinho/finclass-clone-react">
