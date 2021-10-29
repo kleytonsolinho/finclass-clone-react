@@ -66,7 +66,9 @@ export const SlideGallery = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+`;
 
+export const Controls = styled.div`
   button {
     width: 70px;
     height: 450px;

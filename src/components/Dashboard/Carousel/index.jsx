@@ -9,19 +9,20 @@ import {
   SlideHeader,
   SlideContent,
   SlideGallery,
+  Controls,
   Card,
   CardContent,
 } from './styles';
 
-export default function FinclassesCarousel({ imgCategory, data }) {
+export default function Carousel({ imgCategory, dataSlides }) {
   const carousel = useRef(null);
 
-  const handleLeftClick = (e) => {
+  function handleLeftClick(e) {
     e.preventDefault();
     carousel.current.scrollLeft -= 265;
   };
 
-  const handleRightClick = (e) => {
+  function handleRightClick(e) {
     e.preventDefault();
     carousel.current.scrollLeft += 265;
   };
@@ -30,7 +31,7 @@ export default function FinclassesCarousel({ imgCategory, data }) {
     <Container>
       <SlideHeader>
         <img src={imgCategory} alt="Finclasses" />
-        {data.length >= 5 && (
+        {dataSlides.length >= 5 && (
           <div>
             <Link to="/">ver todos</Link>
             <img src={arrowRight} alt="" className="arrowR" />
@@ -38,25 +39,25 @@ export default function FinclassesCarousel({ imgCategory, data }) {
         )}
       </SlideHeader>
       <SlideContent>
-        {data.length >= 5 && (
-          <div>
-            <button type="button" onClick={handleLeftClick}>
+        {dataSlides.length >= 5 && (
+          <Controls>
+            <button type="button" onClick={(event) => handleLeftClick(event)}>
               <img src={arrowImg} alt="Left" width={55} height={55} />
             </button>
-            <button type="button" onClick={handleRightClick}>
+            <button type="button" onClick={(event) => handleRightClick(event)}>
               <img src={arrowImg} alt="Right" width={55} height={55} />
             </button>
-          </div>
+          </Controls>
         )}
         <SlideGallery ref={carousel}>
-          {data.map((item) => (
-            <Card key={item.id} href="/dashboard/expert">
-              <img src={item.img} alt="" />
+          {dataSlides.map((slide) => (
+            <Card key={slide.id} href="/dashboard/expert">
+              <img src={slide.img} alt="" />
               <CardContent className="card-content">
-                <h2>{item.category}</h2>
-                <h1>{item.name}</h1>
-                <span>{item.company}</span>
-                <p>{item.description}</p>
+                <h2>{slide.category}</h2>
+                <h1>{slide.name}</h1>
+                <span>{slide.company}</span>
+                <p>{slide.description}</p>
               </CardContent>
             </Card>
           ))}

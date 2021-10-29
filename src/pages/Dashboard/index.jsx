@@ -2,7 +2,7 @@ import { Container } from './styles';
 
 import Header from '../../components/Dashboard/Header';
 import Banner from '../../components/Dashboard/Banner';
-import FinclassesCarousel from '../../components/Dashboard/FinclassesCarousel';
+import Carousel from '../../components/Dashboard/Carousel';
 import Trail from '../../components/Dashboard/Trail';
 import Footer from '../../components/Dashboard/Footer';
 
@@ -17,8 +17,8 @@ export default function Dashboard() {
     <Container>
       <Header />
       <Banner />
-      <FinclassesCarousel imgCategory={imgFinclasses} data={dataFinclasses} />
-      <FinclassesCarousel imgCategory={imgFinseries} data={dataFinseries} />
+      <Carousel imgCategory={imgFinclasses} dataSlides={dataFinclasses} />
+      <Carousel imgCategory={imgFinseries} dataSlides={dataFinseries} />
       <Trail />
       <Footer />
     </Container>

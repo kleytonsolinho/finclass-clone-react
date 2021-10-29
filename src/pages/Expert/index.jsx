@@ -1,7 +1,7 @@
 import Header from '../../components/Dashboard/Header';
 import Banner from '../../components/Dashboard/Banner';
-import ListClass from '../../components/Dashboard/ListClass/index';
-import FinclassesCarousel from '../../components/Dashboard/FinclassesCarousel/index';
+import ListClass from '../../components/Dashboard/ListClass';
+import Carousel from '../../components/Dashboard/Carousel';
 import Footer from '../../components/Dashboard/Footer';
 
 import dataFinclasses from '../../data/dataFinclasses';
@@ -15,7 +15,7 @@ export default function Expert() {
       <main>
         <Banner />
         <ListClass />
-        <FinclassesCarousel imgCategory={imgFinclasses} data={dataFinclasses} />
+        <Carousel imgCategory={imgFinclasses} dataSlides={dataFinclasses} />
       </main>
       <Footer />
     </>
