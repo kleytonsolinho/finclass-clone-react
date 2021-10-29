@@ -6,7 +6,12 @@ import geralIcon from '../../../assets/images/site/general.svg';
 import { geral, aplicativo, assinatura } from '../../../data/dataFaq';
 
 import {
-  Container, Button, ContentQuestion, Question,
+  Container,
+  Title,
+  Navigation,
+  Button,
+  ContentQuestion,
+  Question,
 } from './styles';
 
 export default function Faq() {
@@ -29,11 +34,11 @@ export default function Faq() {
   return (
     <Container>
       <img src={faqImg} alt="" />
-      <h1>
+      <Title>
         <strong>Perguntas </strong>
         frequentes
-      </h1>
-      <nav>
+      </Title>
+      <Navigation>
         <Button
           type="button"
           onClick={() => tooggleButton(1)}
@@ -58,7 +63,7 @@ export default function Faq() {
           <img src={geralIcon} alt="planos & assinaturas" />
           Planos & Assinaturas
         </Button>
-      </nav>
+      </Navigation>
       <ContentQuestion
         className={buttonSelect === 1 ? 'active-faq' : null}
       >

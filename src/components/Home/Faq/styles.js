@@ -15,21 +15,6 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  h1 {
-    margin: 1rem 0;
-  }
-
-  strong {
-    color: #86888d;
-  }
-
-  nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 750px;
-    margin: 3rem 0 4rem 0;
-  }
-
   ul {
     list-style: none;
   }
@@ -53,6 +38,21 @@ export const Container = styled.div`
       opacity: 0.5;
     }
   }
+`;
+
+export const Title = styled.h1`
+  margin: 1rem 0;
+
+  strong {
+    color: #86888d;
+  }
+`;
+
+export const Navigation = styled.nav`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 750px;
+  margin: 3rem 0 4rem 0;
 `;
 
 export const Button = styled.button`
