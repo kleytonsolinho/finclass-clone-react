@@ -20,19 +20,29 @@
 </p>
 
 <p align="center">
-  <a href="#technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">Instalação e Execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-![App Screenshot](https://res.cloudinary.com/lukemorales/image/upload/v1563042321/readme_logos/rocketshoes_readme_swvhr9.png)
+<div align="center">
+  <img src=".github/images/developer-01.png" alt="app" />
+</div>
 
 <p align="center">
-  <a href="https://rocketshoes.netlify.com/" target="_blank">
+  <a href="https://finclass-react.vercel.app/" target="_blank">
     <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1563043495/readme_logos/demo_on_netlify_bbuvjz.png">
   </a>
 </p>
 
-## :technologies: Tecnologias
+## 📋 Projeto
+
+Aplicação utilizando a Stack do React JS clone identico a plataforma de investimentos Finclass.
+
+Finclass é um plataforma como o "Netflix" de investimentos.
+
+## 🔝 Tecnologias
+
+## :rocket: Tecnologias
 
 Esta aplicação foi desenolvida com as tecnologias abaixo:
 
