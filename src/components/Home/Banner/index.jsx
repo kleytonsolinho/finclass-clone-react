@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import Button from '../../Global/Buttondefault';
+import Button from '../../Global/Form/Button';
 
 import appFinclass from '../../../assets/images/site/app-finclass.webp';
 import lightningIcon from '../../../assets/images/site/thunder-lightning-circle.svg';

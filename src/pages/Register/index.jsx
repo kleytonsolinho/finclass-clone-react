@@ -4,7 +4,7 @@ import {
   Container, Header, Content, Box, Policy,
 } from './styles';
 
-import Button from '../../components/Global/Buttondefault';
+import Button from '../../components/Global/Form/Button';
 
 import imgLogo from '../../assets/images/site/logo-finclass.svg';
 

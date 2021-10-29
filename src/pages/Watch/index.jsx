@@ -6,7 +6,9 @@ export default function Expert() {
   return (
     <>
       <Header />
-      <Watch />
+      <main>
+        <Watch />
+      </main>
       <Footer />
     </>
   );

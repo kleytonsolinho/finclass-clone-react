@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router-dom';
-import Button from '../../Global/Buttondefault';
+import Button from '../../Global/Form/Button';
 
 import imgApp from '../../../assets/images/site/assine-finclass.webp';
 

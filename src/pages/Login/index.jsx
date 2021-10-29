@@ -1,6 +1,6 @@
 import { useHistory } from 'react-router-dom';
 
-import Button from '../../components/Global/Buttondefault';
+import Button from '../../components/Global/Form/Button';
 
 import { Container } from './styles';
 

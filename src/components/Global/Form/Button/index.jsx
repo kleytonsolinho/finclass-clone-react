@@ -1,6 +1,6 @@
 import { Button } from './styles';
 
-export default function Buttondefault({
+export default function ButtonComponent({
   children,
   width,
   primary,
