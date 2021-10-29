@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <h3>NetShoes Clone App com ReactJS e Styled Components.</h3>
+  <h3>Finclass Clone App com React JS e Styled Components.</h3>
 </div>
 
 <p align="center">
