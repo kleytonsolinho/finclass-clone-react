@@ -53,7 +53,7 @@ Esta aplicação foi desenvolvida com as tecnologias abaixo:
 - [ReactJS](https://reactjs.org/)
 - [React Router v4](https://github.com/ReactTraining/react-router)
 - [React Scroll](https://www.npmjs.com/package/react-scroll)
-- [styled-components](https://www.styled-components.com/)
+- [Styled Components](https://www.styled-components.com/)
 - [React-Icons](https://react-icons.netlify.com/)
 
 - [VS Code][vc] with [EditorConfig][vceditconfig], [ESLint][vceslint] and [Prettier][vcprettier]
