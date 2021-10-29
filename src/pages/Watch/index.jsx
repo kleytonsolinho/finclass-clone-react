@@ -1,6 +1,6 @@
-import Header from '../../components/DashboardComponents/Header';
-import Footer from '../../components/DashboardComponents/Footer';
-import Watch from '../../components/DashboardComponents/Watch';
+import Header from '../../components/Dashboard/Header';
+import Footer from '../../components/Dashboard/Footer';
+import Watch from '../../components/Dashboard/Watch';
 
 export default function Expert() {
   return (

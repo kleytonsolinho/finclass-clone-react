@@ -1,19 +1,19 @@
 import { useNavbarScroll } from '../../hooks/useNavbarScroll';
 
-import Header from '../../components/HomeComponents/Header';
+import Header from '../../components/Home/Header';
 
-import Banner from '../../components/HomeComponents/Banner';
-import Carousel from '../../components/HomeComponents/Carousel';
-import Categorys from '../../components/HomeComponents/Categorys';
-import Video from '../../components/HomeComponents/Video';
-import App from '../../components/HomeComponents/App';
-import Timeline from '../../components/HomeComponents/Timeline';
-import Testimonials from '../../components/HomeComponents/Testimonials';
-import Faq from '../../components/HomeComponents/Faq';
-import AppFooter from '../../components/HomeComponents/AppFooter';
+import Banner from '../../components/Home/Banner';
+import Carousel from '../../components/Home/Carousel';
+import Categorys from '../../components/Home/Categorys';
+import Video from '../../components/Home/Video';
+import App from '../../components/Home/App';
+import Timeline from '../../components/Home/Timeline';
+import Testimonials from '../../components/Home/Testimonials';
+import Faq from '../../components/Home/Faq';
+import AppFooter from '../../components/Home/AppFooter';
 
-import Footer from '../../components/HomeComponents/Footer';
-import Subscribebar from '../../components/HomeComponents/Subscribebar';
+import Footer from '../../components/Home/Footer';
+import Subscribebar from '../../components/Home/Subscribebar';
 
 export default function Home() {
   const { isVisible } = useNavbarScroll();

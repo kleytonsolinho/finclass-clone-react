@@ -1,8 +1,8 @@
-import Header from '../../components/DashboardComponents/Header';
-import Banner from '../../components/DashboardComponents/Banner';
-import ListClass from '../../components/DashboardComponents/ListClass/index';
-import FinclassesCarousel from '../../components/DashboardComponents/FinclassesCarousel/index';
-import Footer from '../../components/DashboardComponents/Footer';
+import Header from '../../components/Dashboard/Header';
+import Banner from '../../components/Dashboard/Banner';
+import ListClass from '../../components/Dashboard/ListClass/index';
+import FinclassesCarousel from '../../components/Dashboard/FinclassesCarousel/index';
+import Footer from '../../components/Dashboard/Footer';
 
 import dataFinclasses from '../../data/dataFinclasses';
 
@@ -12,9 +12,11 @@ export default function Expert() {
   return (
     <>
       <Header />
-      <Banner />
-      <ListClass />
-      <FinclassesCarousel imgCategory={imgFinclasses} data={dataFinclasses} />
+      <main>
+        <Banner />
+        <ListClass />
+        <FinclassesCarousel imgCategory={imgFinclasses} data={dataFinclasses} />
+      </main>
       <Footer />
     </>
   );

@@ -26,9 +26,7 @@ export default function Login() {
         <h2>Acesse a maior plataforma de</h2>
         <h1>
           Educação financeira
-          {' '}
           <br />
-          {' '}
           do mundo!
         </h1>
         <form onSubmit={handleSubmit} autoComplete="off">

@@ -28,9 +28,7 @@ export default function Register() {
           <form autoComplete="off" onSubmit={handleSubmit}>
             <span>
               PASSO:
-              {' '}
               <strong>1</strong>
-              {' '}
               2
             </span>
             <h1>Criar conta</h1>
@@ -69,15 +67,12 @@ export default function Register() {
           <p>
             * Em caso de problemas, entre em contato com o suporte através do
             email
-            {' '}
             <a href="/register">suporte@finclass.com</a>
             .
           </p>
           <p>
             Ao ”clicar” no botão continuar, você aceita nosso
-            {' '}
             <a href="/register">termos de uso</a>
-            {' '}
             e
             <a href="/register"> política de privacidade</a>
             .

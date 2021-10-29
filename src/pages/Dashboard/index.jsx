@@ -1,10 +1,10 @@
 import { Container } from './styles';
 
-import Header from '../../components/DashboardComponents/Header';
-import Banner from '../../components/DashboardComponents/Banner';
-import FinclassesCarousel from '../../components/DashboardComponents/FinclassesCarousel';
-import Trail from '../../components/DashboardComponents/Trail';
-import Footer from '../../components/DashboardComponents/Footer';
+import Header from '../../components/Dashboard/Header';
+import Banner from '../../components/Dashboard/Banner';
+import FinclassesCarousel from '../../components/Dashboard/FinclassesCarousel';
+import Trail from '../../components/Dashboard/Trail';
+import Footer from '../../components/Dashboard/Footer';
 
 import dataFinclasses from '../../data/dataFinclasses';
 import dataFinseries from '../../data/dataFinseries';
